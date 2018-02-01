@@ -23,3 +23,7 @@ ______   _______ _________ _______ _________ _        _______  _______
 + `ls git/`
     - `gitignore`
     - `gitconfig`
+
+### Firefox
++ `ls firefox/`
+    - `userChrome.css`

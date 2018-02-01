@@ -1,0 +1,120 @@
+/* ~/.mozilla/firefox/$PROFILE/chrome
+________ ___  ________  _______   ________ ________     ___    ___
+|\  _____\\  \|\   __  \|\  ___ \ |\  _____\\   __  \   |\  \  /  /|
+\ \  \__/\ \  \ \  \|\  \ \   __/|\ \  \__/\ \  \|\  \  \ \  \/  / /
+\ \   __\\ \  \ \   _  _\ \  \_|/_\ \   __\\ \  \\\  \  \ \    / /
+ \ \  \_| \ \  \ \  \\  \\ \  \_|\ \ \  \_| \ \  \\\  \  /     \/
+  \ \__\   \ \__\ \__\\ _\\ \_______\ \__\   \ \_______\/  /\   \
+   \|__|    \|__|\|__|\|__|\|_______|\|__|    \|_______/__/ /\ __\
+*/
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+
+/* input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']):not([type='radio']) {
+    -moz-appearance: none !important;
+    background-color: white;
+    color: black;
+}
+
+textarea {
+    -moz-appearance: none !important;
+    background-color: white;
+    color: black;
+}
+
+select {
+    -moz-appearance: none !important;
+    background-color: white;
+    color: black;
+} */
+
+#downloads-indicator-counter {
+    color: white;
+}
+
+
+/* PanelUI */
+
+/* Newtab button */
+:-moz-any(.tabs-newtab-button,#new-tab-button,#alltabs-button) .toolbarbutton-icon {
+    border-radius: 0 !important;
+}
+
+/* Remove separator between menu and overflow */
+#PanelUI-button {
+    border-left: none !important;
+}
+
+/* Back & Foward Buttons */
+#back-button > .toolbarbutton-icon,
+#forward-button > .toolbarbutton-icon {
+  transform: scale(0.9, 0.9) !important;
+  margin-left: -2px !important;
+  margin-right: -2px !important;
+}
+
+#back-button > .toolbarbutton-icon {
+    border: none !important;
+    border-radius: 2px !important;
+}
+
+
+/* Findbar */
+.browserContainer {
+    position: relative;
+}
+
+findbar {
+    position: absolute;
+    top: -2px;
+    right: 20px;
+}
+
+findbar .findbar-container .findbar-find-previous,
+findbar .findbar-container .findbar-find-next {
+	background: transparent !important;
+    border-color: var(--backbutton-border-color) !important;
+}
+
+findbar .findbar-container .findbar-find-previous:hover, findbar .findbar-container .findbar-find-previous:focus,
+findbar .findbar-container .findbar-find-next:hover,
+findbar .findbar-container .findbar-find-next:focus {
+	background-color: var(--toolbarbutton-hover-background) !important;
+}
+
+
+/* Context Menu */
+#screenshots_mozilla_org_create-screenshot {
+    -moz-box-ordinal-group: 0 !important;
+}
+
+
+/* Hide Elements */
+
+/* Menu */
+#appMenu-zoom-controls,
+#appMenu-zoom-controls+toolbarseparator,
+#appMenu-edit-controls,
+#appMenu-edit-controls+toolbarseparator,
+#appMenu-library-button,
+#appMenu-open-file-button,
+#appMenu-save-file-button,
+#appMenu-find-button,
+#appMenu-more-button,
+
+/* URL Bar */
+.autocomplete-history-dropmarker,
+.urlbar-page-action,
+#_e225ac78-5e83-484b-a16b-b6ed0924212f_-page-action,
+#jid1-xufzosoflzsoxg_jetpack-page-action,
+
+/* Context Menu */
+#context-navigation,
+#context-savepage,
+#context-pocket,
+#ublock0_raymondhill_net_uBlock0-blockElement,
+#context-savelinktopocket
+{
+    display: none !important;
+}
