@@ -1,0 +1,7 @@
+#
+# ~/.gitignore
+#
+
+# Editors
+.vscode
+.idea

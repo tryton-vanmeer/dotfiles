@@ -13,8 +13,13 @@ ______   _______ _________ _______ _________ _        _______  _______
 ## Configs for GNU/Linux systems
 
 ### Bash
-+ `ls /bash/*`
++ `ls bash/`
     - `bashrc`
     - `aliases.sh`
     - `paths.sh`
     - `prompt.sh`
+
+### Git
++ `ls git/`
+    - `gitignore`
+    - `gitconfig`
