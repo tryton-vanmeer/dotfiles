@@ -5,6 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+. /usr/share/bash-completion/bash_completion
 
 export EDITOR=/usr/bin/nano
 export PROMPT_DIRTRIM=3

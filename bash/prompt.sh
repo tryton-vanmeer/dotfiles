@@ -25,6 +25,6 @@ _prompt_python ()
 
 _update_prompt ()
 {
-    PS1="┌\[$(tput setaf 6)\]  \w $(_prompt_python) $(_prompt_git )\[$(tput sgr0)\]\n└>$ "
+    PS1="┌\[$(tput setaf 6)\]  \[$(tput setaf 6)\]\w $(_prompt_python) $(_prompt_git )\[$(tput sgr0)\]\n└>$ "
 }
 PROMPT_COMMAND="_update_prompt;$PROMPT_COMMAND"
