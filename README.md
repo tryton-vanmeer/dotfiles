@@ -12,15 +12,28 @@ ______   _______ _________ _______ _________ _        _______  _______
 
 ## Configs for GNU/Linux systems
 
-### Bash/
-+ bashrc
-+ aliases.sh
-+ paths.sh
-+ prompt.sh
+### Atom/
++ keymap.cson → $HOME/.atom/keymap.cson
 
-### Git/
-+ gitignore
-+ gitconfig
+### Bash/
++ bashrc → $HOME/.bashrc
++ aliases.sh → $HOME/.bash/aliases.sh
++ paths.sh → $HOME/.bash/paths.sh
++ prompt.sh → $HOME/.bash/prompt.sh
 
 ### Firefox/
-+ userChrome.css
++ userChrome.css → $HOME/.mozilla/firefox/<profile>/chrome/userChrome.css
+
+### Git/
++ gitignore → $HOME/.gitignore
++ gitconfig → $HOME/.gitconfig
+
+### Misc/
++ dircolors → $HOME/.dircolors
++ hidden → $HOME/.hidden
+
+### NPM/
++ npmrc → $HOME/.npmrc
+
+### Tilix/
++ nord.json → $HOME/.config/tilix/schemes/nord.json
