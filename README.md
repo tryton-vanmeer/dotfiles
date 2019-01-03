@@ -36,4 +36,4 @@ ______   _______ _________ _______ _________ _        _______  _______
 + npmrc → $HOME/.npmrc
 
 ### Tilix/
-+ nord.json → $HOME/.config/tilix/schemes/nord.json
++ *.json → $HOME/.config/tilix/schemes/*.json
