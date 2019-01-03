@@ -15,16 +15,16 @@ _prompt_git ()
     [ $(git rev-list origin/$(git rev-parse --abbrev-ref HEAD)..HEAD --count 2> /dev/null) -ne 0 2> /dev/null ] && git_branch+=" "   # Commits ahead of remote
     [ $(git rev-list HEAD..origin/$(git rev-parse --abbrev-ref HEAD) --count 2> /dev/null) -ne 0 2> /dev/null ] && git_branch+=" "   # Commits behind of remote
 
-    echo "\[$(tput setaf 2)\][ ${git_branch} ]"
+    echo "\[$(tput setaf 2)\] [ ${git_branch} ]"
 }
 
 _prompt_python ()
 {
-    [ -z ${VIRTUAL_ENV+x} ] || echo "\[$(tput setaf 3)\]"
+    [ -z ${VIRTUAL_ENV+x} ] || echo "\[$(tput setaf 3)\]  "
 }
 
 _update_prompt ()
 {
-    PS1="┌\[$(tput setaf 6)\]  \[$(tput setaf 6)\]\w $(_prompt_python) $(_prompt_git )\[$(tput sgr0)\]\n└>$ "
+    PS1="┌\[$(tput setaf 1)\]  \[$(tput setaf 5)\]\w$(_prompt_git )$(_prompt_python)\[$(tput sgr0)\]\n└>$ "
 }
 PROMPT_COMMAND="_update_prompt;$PROMPT_COMMAND"
