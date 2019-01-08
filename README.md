@@ -21,6 +21,10 @@ ______   _______ _________ _______ _________ _        _______  _______
 + paths.sh → $HOME/.bash/paths.sh
 + prompt.sh → $HOME/.bash/prompt.sh
 
+### Bat/
++ themes/* -> $HOME/.config/bat/themes/*
++ config -> $HOME/.config/bat/config
+
 ### Firefox/
 + userChrome.css → $HOME/.mozilla/firefox/<profile>/chrome/userChrome.css
 
@@ -37,3 +41,6 @@ ______   _______ _________ _______ _________ _        _______  _______
 
 ### Tilix/
 + *.json → $HOME/.config/tilix/schemes/*.json
+
+### WWW/
++ config.json -> $HOME/.www/Startpage/config.json
