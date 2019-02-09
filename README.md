@@ -35,6 +35,7 @@ ______   _______ _________ _______ _________ _        _______  _______
 ### Misc/
 + dircolors → $HOME/.dircolors
 + hidden → $HOME/.hidden
++ packages.md → List of software to install.
 
 ### NPM/
 + npmrc → $HOME/.npmrc
