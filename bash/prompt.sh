@@ -30,7 +30,7 @@ _prompt_git ()
 _prompt_python ()
 {
     if [[ ! -z ${VIRTUAL_ENV+x} ]]; then
-        venv_path=$(realpath --relative-to=. ${VIRTUAL_ENV})
+        venv_path=$(basename ${VIRTUAL_ENV})
         echo "${COLOR_CYAN}-[${COLOR_YELLOW}${venv_path}${COLOR_CYAN}]${COLOR_RESET}"
     fi
 }
