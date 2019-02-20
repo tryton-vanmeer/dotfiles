@@ -35,8 +35,15 @@ _prompt_python ()
     fi
 }
 
+_prompt_ssh ()
+{
+    if [[ ! -z ${SSH_TTY+x} ]]; then
+        echo "${COLOR_CYAN}-[${COLOR_RED}SSH${COLOR_CYAN}]${COLOR_RESET}"
+    fi
+}
+
 _update_prompt ()
 {
-    PS1="${COLOR_CYAN}┌[${COLOR_MAGENTA}\w${COLOR_CYAN}]$(_prompt_git)$(_prompt_python)\n${COLOR_CYAN}└$ ${COLOR_RESET}"
+    PS1="${COLOR_CYAN}┌[${COLOR_MAGENTA}\w${COLOR_CYAN}]$(_prompt_ssh)$(_prompt_git)$(_prompt_python)\n${COLOR_CYAN}└$ ${COLOR_RESET}"
 }
 PROMPT_COMMAND="_update_prompt;$PROMPT_COMMAND"
