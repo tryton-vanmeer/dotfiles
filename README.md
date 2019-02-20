@@ -10,7 +10,7 @@ ______   _______ _________ _______ _________ _        _______  _______
 
 ```
 
-## Configs for GNU/Linux systems
+## Configs for Linux systems
 
 ### Atom/
 + keymap.cson → $HOME/.atom/keymap.cson
