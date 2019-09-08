@@ -42,6 +42,3 @@ ______   _______ _________ _______ _________ _        _______  _______
 
 ### Tilix/
 + *.json → $HOME/.config/tilix/schemes/*.json
-
-### WWW/
-+ config.json -> $HOME/.www/Startpage/config.json
