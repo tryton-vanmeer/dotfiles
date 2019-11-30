@@ -1,0 +1,28 @@
+add_newline = false
+
+[character]
+style_success = "fg:cyan"
+style_failure = "fg:cyan"
+symbol = "λ"
+
+[directory]
+style = "fg:purple"
+truncation_length = 6
+
+[cmd_duration]
+disabled = true
+
+[jobs]
+disabled = true
+
+[package]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[python]
+disabled = true
+
+[rust]
+disabled = true
