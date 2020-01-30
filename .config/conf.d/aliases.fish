@@ -1,0 +1,7 @@
+alias ls 'ls --color=auto --group-directories-first -v'
+alias cdg 'cd (git rev-parse --show-toplevel)'
+alias ranfile 'ls | sort -R | tail -n1'
+alias clock 'tty-clock -ct -C5'
+alias df 'df -h'
+alias 🐈 'echo meow'
+alias ip 'ip -c'
