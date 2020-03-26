@@ -11,7 +11,14 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 function title()
 {
-    echo -e "${RED}----- ${1} -----${NC}"
+    echo -e "${PURPLE}----- ${1} -----${NC}"
+    >&2 echo "----- ${1} -----"
+}
+
+function subtitle()
+{
+    echo -n "${1}..."
+    >&2 echo "${1}..."
 }
 
 function checkmark()
