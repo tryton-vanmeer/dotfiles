@@ -5,6 +5,7 @@ exec 2>> /tmp/setup.log
 NC="\033[0m"
 RED="\033[0;31m"
 GREEN="\033[0;32m"
+PURPLE="\033[0;35m"
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
