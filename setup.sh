@@ -105,7 +105,23 @@ function setup_starship()
     checkmark
 }
 
+function setup_tilix()
+{
+    title "Tilix"
+
+    subtitle "Creating folders"
+    mkdir -p ~/.config/tilix/schemes
+    checkmark
+
+    subtitle "Symlinking themes"
+    ln -s "${DIR}/tilix/schemes/*" ~/.config/tilix/schemes
+    checkmark
+}
+
 date > /tmp/setup.log
 setup_bat
 setup_fish
 setup_git
+setup_nano
+setup_starship
+setup_tilix
