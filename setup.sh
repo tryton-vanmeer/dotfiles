@@ -74,6 +74,20 @@ function setup_fish()
     checkmark
 }
 
+function setup_git()
+{
+    title "Git"
+
+    subtitle "Symlinking .gitconfig"
+    ln -s "${DIR}/git/gitconfig" ~/.gitconfig
+    checkmark
+
+    subtitle "Symlinking .gitignore"
+    ln -s "${DIR}/git/gitignore" ~/.gitignore
+    checkmark
+}
+
 date > /tmp/setup.log
 setup_bat
 setup_fish
+setup_git
