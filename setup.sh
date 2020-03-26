@@ -51,4 +51,5 @@ function setup_bat()
     checkmark
 }
 
+date > /tmp/setup.log
 setup_bat
