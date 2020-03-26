@@ -96,6 +96,15 @@ function setup_nano()
     checkmark
 }
 
+function setup_starship()
+{
+    title "Starship"
+
+    subtitle "Symlinking config"
+    ln -s "${DIR}/starship/starship.toml" ~/.config
+    checkmark
+}
+
 date > /tmp/setup.log
 setup_bat
 setup_fish
