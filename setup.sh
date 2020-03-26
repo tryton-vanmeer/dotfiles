@@ -87,6 +87,15 @@ function setup_git()
     checkmark
 }
 
+function setup_nano()
+{
+    title "Nano"
+
+    subtitle "Symlinking .nanorc"
+    ln -s "${DIR}/nano/nanorc" ~/.nanorc
+    checkmark
+}
+
 date > /tmp/setup.log
 setup_bat
 setup_fish
