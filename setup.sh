@@ -34,19 +34,19 @@ function setup_bat()
 {
     title "Bat"
 
-    echo -n "Creating folders..."
+    subtitle "Creating folders"
     mkdir -p ~/.config/bat/themes
     checkmark
 
-    echo -n "Symlinking config..."
+    subtitle "Symlinking config..."
     ln -s "${DIR}/bat/config" ~/.config/bat/
     checkmark
 
-    echo -n "Symlinking themes..."
+    subtitle "Symlinking themes"
     ln -s "${DIR}/bat/themes/Dracula.tmTheme" ~/.config/bat/themes/
     checkmark
 
-    echo -n "Building cache..."
+    subtitle "Building cache"
     bat cache --build 1>/dev/null
     checkmark
 }
