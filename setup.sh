@@ -23,7 +23,11 @@ function subtitle()
 
 function checkmark()
 {
-    echo -e " ${GREEN}✓${NC}"
+    if [ "$?" -eq 0 ]; then
+        echo -e " ${GREEN}✓${NC}"
+    else
+        echo -e " ${RED}✗${NC}"
+    fi
 }
 
 function setup_bat()
