@@ -14,15 +14,3 @@ disabled = true
 
 [jobs]
 disabled = true
-
-[package]
-disabled = true
-
-[nodejs]
-disabled = true
-
-[python]
-disabled = true
-
-[rust]
-disabled = true
