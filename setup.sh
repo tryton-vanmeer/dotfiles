@@ -38,7 +38,7 @@ function setup_bat()
     mkdir -p ~/.config/bat/themes
     checkmark
 
-    subtitle "Symlinking config..."
+    subtitle "Symlinking config"
     ln -s "${DIR}/bat/config" ~/.config/bat/
     checkmark
 
@@ -51,5 +51,29 @@ function setup_bat()
     checkmark
 }
 
+function setup_fish()
+{
+    title "Fish"
+
+    subtitle "Creating folders"
+    mkdir -p ~/.config/fish/completions
+    mkdir -p ~/.config/fish/conf.d
+    mkdir -p ~/.config/fish/functions
+    checkmark
+
+    subtitle "Symlinking completions"
+    ln -s "${DIR}/fish/completions"/* ~/.config/fish/completions
+    checkmark
+
+    subtitle "Symlinking configs"
+    ln -s "${DIR}/fish/conf.d"/* ~/.config/fish/conf.d
+    checkmark
+
+    subtitle "Symlinking functions"
+    ln -s "${DIR}/fish/functions"/* ~/.config/fish/functions
+    checkmark
+}
+
 date > /tmp/setup.log
 setup_bat
+setup_fish
