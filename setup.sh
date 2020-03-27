@@ -116,6 +116,10 @@ function setup_tilix()
     subtitle "Symlinking themes"
     ln -s "${DIR}/tilix/schemes/"* ~/.config/tilix/schemes
     checkmark
+
+    subtitle "Importing dconf Settings"
+    dconf load /com/gexperts/Tilix/ < "${DIR}/tilix/tilix.dconf"
+    checkmark
 }
 
 date > /tmp/setup.log
