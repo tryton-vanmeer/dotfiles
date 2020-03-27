@@ -114,7 +114,7 @@ function setup_tilix()
     checkmark
 
     subtitle "Symlinking themes"
-    ln -s "${DIR}/tilix/schemes/*" ~/.config/tilix/schemes
+    ln -s "${DIR}/tilix/schemes/"* ~/.config/tilix/schemes
     checkmark
 }
 
