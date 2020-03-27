@@ -8,7 +8,7 @@ end
 
 function __dnf_list_available_packages
     if type -q sqlite3
-        sqlite3 /var/cache/dnf/packages.db "SELECT pkg FROM available WHERE pkg LIKE \"$cur%\"" 2>/dev/null | string replace -r ".fc.*" "" | string -r "\-[0-9].*" ""
+        sqlite3 /var/cache/dnf/packages.db "SELECT pkg FROM available WHERE pkg LIKE \"$cur%\"" 2>/dev/null | string replace -r ".fc.*" "" | string replace -r "\-[0-9].*" ""
     end
 end
 
