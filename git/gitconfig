@@ -8,7 +8,6 @@
 
 [core]
     excludesfile = ~/.config/git/ignore
-    attributesfile = ~/.gitattributes
 
 [url "https://github.com/"]
  insteadOf = "gh:"
