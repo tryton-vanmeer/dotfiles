@@ -1,3 +1,3 @@
 function ls
-    /usr/bin/ls --color=auto --group-directories-first -v $argv
+    /usr/bin/exa --group-directories-first --git $argv
 end
