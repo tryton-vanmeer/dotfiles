@@ -95,8 +95,12 @@ function setup_nano()
 {
     title "Nano"
 
+    subtitle "Creating folders"
+    mkdir -m ~/.config/nano
+    checkmark
+
     subtitle "Symlinking .nanorc"
-    ln -s "${DIR}/nano/nanorc" ~/.nanorc
+    ln -s "${DIR}/nano/nanorc" ~/.config/nano/nanorc
     checkmark
 }
 
