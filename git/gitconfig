@@ -7,7 +7,7 @@
     name = Tryton Van Meer
 
 [core]
-    excludesfile = ~/.gitignore
+    excludesfile = ~/.config/git/ignore
     attributesfile = ~/.gitattributes
 
 [url "https://github.com/"]
