@@ -16,3 +16,4 @@ set -x WINEPREFIX "$XDG_DATA_HOME/wineprefixes/default"
 set -x WGETRC "$XDG_CONFIG_HOME/wgetrc"
 set -x LESSHISTFILE -
 set -x ANDROID_SDK_HOME "$XDG_CONFIG_HOME/android"
+set -x CARGO_HOME "$XDG_DATA_HOME/cargo"
