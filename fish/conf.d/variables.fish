@@ -3,3 +3,5 @@ set -U fish_emoji_width 2
 
 set -x BROWSER /usr/bin/firefox
 set -x EDITOR /usr/bin/nano
+
+set -x XAUTHORITY "$XDG_RUNTIME_DIR"/Xauthority
