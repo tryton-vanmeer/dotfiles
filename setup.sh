@@ -78,12 +78,16 @@ function setup_git()
 {
     title "Git"
 
+    subtitle "Creating folders"
+    mkdir -p ~/.config/git/
+    checkmark
+
     subtitle "Symlinking .gitconfig"
-    ln -s "${DIR}/git/gitconfig" ~/.gitconfig
+    ln -s "${DIR}/git/gitconfig" ~/.config/git/config
     checkmark
 
     subtitle "Symlinking .gitignore"
-    ln -s "${DIR}/git/gitignore" ~/.gitignore
+    ln -s "${DIR}/git/gitignore" ~/.config/git/ignore
     checkmark
 }
 
