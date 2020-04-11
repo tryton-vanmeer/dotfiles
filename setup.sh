@@ -122,6 +122,15 @@ function setup_tilix()
     checkmark
 }
 
+function setup_wget()
+{
+    title "Wget"
+
+    subtitle "Symlinking config"
+    ln -s "${DIR}/wget/wgetrc" ~/.config/wgetrc
+    checkmark
+}
+
 date > /tmp/setup.log
 setup_bat
 setup_fish
@@ -129,3 +138,4 @@ setup_git
 setup_nano
 setup_starship
 setup_tilix
+setup_wget
