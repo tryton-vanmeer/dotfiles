@@ -1,5 +1,5 @@
 ---
-- name: Links wgetrc file
+- name: Link wgetrc file
   file:
     src="{{ role_path }}/files/wgetrc"
     dest="~/.config/wgetrc"

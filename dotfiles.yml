@@ -6,6 +6,7 @@
   vars:
     user: "{{ localuser }}"
   roles:
+    - bat
     - fish
     - git
     - wget

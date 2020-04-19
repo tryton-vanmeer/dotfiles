@@ -1,0 +1,20 @@
+---
+- name: Create ~/.config/bat/themes
+  file:
+    dest: "~/.config/bat/themes"
+    state: directory
+
+- name: Link config
+  file:
+    src: "{{ role_path }}/files/config"
+    dest: "~/.config/bat/config"
+    state: link
+
+- name: Link theme
+  file:
+    src: "{{ role_path }}/files/Dracula.tmTheme"
+    dest: "~/.config/bat/themes/Dracula.tmTheme"
+    state: link
+
+- name: Build cache
+  shell: bat cache --build
