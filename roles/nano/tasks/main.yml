@@ -9,4 +9,3 @@
     src: "{{ role_path }}/files/nanorc"
     dest: "~/.config/nano/nanorc"
     state: link
-    force: true
