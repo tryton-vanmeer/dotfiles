@@ -9,5 +9,6 @@
     - bat
     - fish
     - git
+    - nano
     - wget
     - starship
