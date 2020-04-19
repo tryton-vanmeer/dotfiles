@@ -10,5 +10,6 @@
     - fish
     - git
     - nano
-    - wget
     - starship
+    - tilix
+    - wget

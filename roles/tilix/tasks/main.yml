@@ -1,0 +1,14 @@
+---
+- name: Create ~/.config/tilix/schemes
+  file:
+    dest: "~/.config/tilix/schemes"
+    state: directory
+
+- name: Link Dracula.json
+  file:
+    src: "{{ role_path }}/files/Dracula.json"
+    dest: "~/.config/tilix/schemes/Dracula.json"
+    state: link
+
+- name: Import dconf settings
+  shell: dconf load /com/gexperts/Tilix/ < "{{ role_path }}/files/tilix.dconf"
