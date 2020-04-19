@@ -1,44 +1,44 @@
 ---
 - name: Create ~/.config/fish
   file:
-    dest="~/.config/fish"
-    state=directory
+    dest: "~/.config/fish"
+    state: directory
 
 - name: Create ~/.config/completions
   file:
-    dest="~/.config/fish/completions"
-    state=directory
+    dest: "~/.config/fish/completions"
+    state: directory
 
 - name: Create ~/.config/conf.d
   file:
-    dest="~/.config/fish/conf.d"
-    state=directory
+    dest: "~/.config/fish/conf.d"
+    state: directory
 
 - name: Create ~/.config/functions
   file:
-    dest="~/.config/fish/functions"
-    state=directory
+    dest: "~/.config/fish/functions"
+    state: directory
 
 - name: Link completions
   file:
-    src="{{ item }}"
-    dest="~/.config/fish/completions/{{ item | basename }}"
-    state=link
-    force=true
+    src: "{{ item }}"
+    dest: "~/.config/fish/completions/{{ item | basename }}"
+    state: link
+    force: true
   with_fileglob: completions/*
 
 - name: Link conf.d
   file:
-    src="{{ item }}"
-    dest="~/.config/fish/conf.d/{{ item | basename }}"
-    state=link
-    force=true
+    src: "{{ item }}"
+    dest: "~/.config/fish/conf.d/{{ item | basename }}"
+    state: link
+    force: true
   with_fileglob: conf.d/*
 
 - name: Link functions
   file:
-    src="{{ item }}"
-    dest="~/.config/fish/functions/{{ item | basename }}"
-    state=link
-    force=true
+    src: "{{ item }}"
+    dest: "~/.config/fish/functions/{{ item | basename }}"
+    state: link
+    force: true
   with_fileglob: functions/*
