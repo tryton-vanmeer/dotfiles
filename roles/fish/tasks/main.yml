@@ -24,7 +24,6 @@
     src: "{{ item }}"
     dest: "~/.config/fish/completions/{{ item | basename }}"
     state: link
-    force: true
   with_fileglob: completions/*
 
 - name: Link conf.d
@@ -32,7 +31,6 @@
     src: "{{ item }}"
     dest: "~/.config/fish/conf.d/{{ item | basename }}"
     state: link
-    force: true
   with_fileglob: conf.d/*
 
 - name: Link functions
@@ -40,5 +38,4 @@
     src: "{{ item }}"
     dest: "~/.config/fish/functions/{{ item | basename }}"
     state: link
-    force: true
   with_fileglob: functions/*
