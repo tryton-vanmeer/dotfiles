@@ -9,3 +9,7 @@ ______   _______ _________ _______ _________ _        _______  _______
 (______/ (_______)   )_(   |/       \_______/(_______/(_______/\_______)
 
 ```
+
+Personal dotfiles managed by Ansible.
+
+Execute `bootstrap.sh` to run the playbook.
