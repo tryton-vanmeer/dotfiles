@@ -1,0 +1,19 @@
+---
+- name: Create ~/.config/git
+  file:
+    dest="~/.config/git"
+    state=directory
+
+- name: Link gitconfig
+  file:
+    src="{{ role_path }}/files/gitconfig"
+    dest="~/.config/git/config"
+    state=link
+    force=true
+
+- name: Link gitignore
+  file:
+    src="{{ role_path }}/files/gitignore"
+    dest="~/.config/git/ignore"
+    state=link
+    force=true

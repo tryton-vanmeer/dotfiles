@@ -1,0 +1,9 @@
+# Editors
+.vscode
+.idea
+.buildconfig
+
+*.json~
+
+# Python
+venv/

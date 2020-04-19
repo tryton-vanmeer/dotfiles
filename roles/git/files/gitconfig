@@ -1,0 +1,17 @@
+#
+# ~/.gitconfig
+#
+
+[user]
+    email = trytonvanmeer@protonmail.com
+    name = Tryton Van Meer
+
+[core]
+    excludesfile = ~/.config/git/ignore
+
+[url "https://github.com/"]
+ insteadOf = "gh:"
+
+[alias]
+    graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)(%an)%Creset' --abbrev-commit --date=relative
+    grab = "!f() { git clone git@github.com:tryton-vanmeer/$1.git; }; f"

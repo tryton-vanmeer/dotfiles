@@ -7,3 +7,5 @@
     user: "{{ localuser }}"
   roles:
     - wget
+    - git
+    - starship

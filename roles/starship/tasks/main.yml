@@ -1,0 +1,7 @@
+---
+- name: Link starship config
+  file:
+    src="{{ role_path }}/files/starship.toml"
+    dest="~/.config/starship.toml"
+    state=link
+    force=true
