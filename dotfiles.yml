@@ -6,6 +6,7 @@
   vars:
     user: "{{ localuser }}"
   roles:
-    - wget
+    - fish
     - git
+    - wget
     - starship
