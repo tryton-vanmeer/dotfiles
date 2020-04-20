@@ -5,7 +5,7 @@
   become_method: sudo
   package:
     name: "{{ item }}"
-    state: latest
+    state: present
   with_items:
     - android-tools
     - android-udev
