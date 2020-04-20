@@ -1,12 +1,5 @@
 [/]
-app-title=''
-enable-wide-handle=false
-middle-click-close=false
-prompt-on-close=true
-prompt-on-close-process=false
-prompt-on-delete-profile=true
-quake-specific-monitor=0
-session-name=''
+
 sidebar-on-right=false
 tab-position='top'
 terminal-title-show-when-single=false
