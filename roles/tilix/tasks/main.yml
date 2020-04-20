@@ -10,5 +10,16 @@
     dest: "~/.config/tilix/schemes/Dracula.json"
     state: link
 
-- name: Import dconf settings
-  shell: dconf load /com/gexperts/Tilix/ < "{{ role_path }}/files/tilix.dconf"
+# https://github.com/gnunn1/tilix/blob/master/data/gsettings/com.gexperts.Tilix.gschema.xml
+
+- name: Configure app-title in Tilix
+  dconf:
+    key: "/com/gexperts/Tilix/app-title"
+    value: "''"
+    state: present
+
+- name: "Configure session-name in Tilix"
+  dconf:
+    key: "/com/gexperts/Tilix/session-name"
+    value: "''"
+    state: present
