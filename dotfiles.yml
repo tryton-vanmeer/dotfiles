@@ -2,10 +2,10 @@
 - hosts: localhost
   connection: local
   remote_user: "{{ localuser }}"
-  gather_facts: no
   vars:
     user: "{{ localuser }}"
   roles:
+    - packages
     - bat
     - fish
     - git
