@@ -96,3 +96,23 @@
     - virt-manager
     - yelp
     - youtube-dl
+
+- name: Installing AUR helper (yay)
+  aur:
+    name: "yay"
+    skip_installed: yes
+    use: "makepkg"
+
+- name: Installing pacakges (AUR)
+  aur:
+    name: "{{ item }}"
+    skip_installed: yes
+    use: "yay"
+  with_items:
+    - inxi
+    - ncspot
+    - pfetch
+    - starship
+    - tty-clock
+    - vala-language-server
+    - ytop
