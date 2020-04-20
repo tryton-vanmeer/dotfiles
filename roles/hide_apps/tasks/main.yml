@@ -1,0 +1,26 @@
+---
+- name: Link .desktop file to hide apps
+  file:
+    src: "{{ role_path }}/files/hidden.desktop"
+    dest: "~/.local/share/applications/{{ item }}.desktop"
+    state: link
+  with_items:
+    - avahi-discover
+    - bssh
+    - bvnc
+    - cmake-gui
+    - electron6
+    - electron7
+    - htop
+    - java-java11-openjdk
+    - jconsole-java11-openjdk
+    - jshell-java11-openjdk
+    - lstopo
+    - mpv
+    - org.bpython-interpreter.bpython
+    - qv4l2
+    - qvidcap
+    - ranger
+    - xdvi
+    - zenmap-root
+    - zenmap
