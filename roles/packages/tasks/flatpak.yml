@@ -1,0 +1,22 @@
+---
+- name: Add the flathub flatpak repository remote
+  flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+
+- name: Installing packages (flatpak)
+  flatpak:
+    name: "{{ item }}"
+    remote: flathub
+    state: present
+  with_items:
+    - com.github.bilelmoussaoui.Authenticator
+    - com.leinardi.gst
+    - com.spotify.Client
+    - com.teamspeak.TeamSpeak
+    - org.gabmus.whatip
+    - org.gnome.PasswordSafe
+    - org.gnome.design.Contrast
+    - org.gnome.gitlab.Cowsay
+    - org.gtk.Gtk3theme.Adwaita-dark
