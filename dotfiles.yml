@@ -5,11 +5,11 @@
   vars:
     user: "{{ localuser }}"
   roles:
-    - packages
-    - bat
-    - fish
-    - git
-    - nano
-    - starship
-    - tilix
-    - wget
+    - { role: packages, tags: ['packages'] }
+    - { role: bat, tags: ['bat'] }
+    - { role: fish, tags: ['fish'] }
+    - { role: git, tags: ['git'] }
+    - { role: nano, tags: ['nano'] }
+    - { role: starship, tags: ['starship'] }
+    - { role: tilix, tags: ['tilix'] }
+    - { role: wget, tags: ['wget'] }
