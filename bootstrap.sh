@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-ansible-playbook -i .inventory dotfiles.yml -e "localuser=$USER"
+ansible-playbook -i .inventory dotfiles.yml --ask-become-pass --extra-vars "localuser=$USER"
