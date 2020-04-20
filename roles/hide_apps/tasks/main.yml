@@ -5,19 +5,23 @@
     dest: "~/.local/share/applications/{{ item }}.desktop"
     state: link
   with_items:
+    - assistant
     - avahi-discover
     - bssh
     - bvnc
     - cmake-gui
+    - designer
     - electron6
     - electron7
     - htop
     - java-java11-openjdk
     - jconsole-java11-openjdk
     - jshell-java11-openjdk
+    - linguist
     - lstopo
     - mpv
     - org.bpython-interpreter.bpython
+    - qdbusviewer
     - qv4l2
     - qvidcap
     - ranger
