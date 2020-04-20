@@ -10,16 +10,86 @@
     dest: "~/.config/tilix/schemes/Dracula.json"
     state: link
 
-# https://github.com/gnunn1/tilix/blob/master/data/gsettings/com.gexperts.Tilix.gschema.xml
-
 - name: Configure app-title in Tilix
   dconf:
     key: "/com/gexperts/Tilix/app-title"
     value: "''"
     state: present
 
-- name: "Configure session-name in Tilix"
+- name: Configure session-name in Tilix
   dconf:
     key: "/com/gexperts/Tilix/session-name"
     value: "''"
+    state: present
+
+- name: Configure in Tilix
+  dconf:
+    key: "/com/gexperts/Tilix/terminal-title-show-when-single"
+    value: "false"
+    state: present
+
+- name: Configure use-tabs in Tilix
+  dconf:
+    key: "/com/gexperts/Tilix/use-tabs"
+    value: "false"
+    state: present
+
+- name: Configure profile list in Tilix
+  dconf:
+    key: "/com/gexperts/Tilix/profiles/list"
+    value: "['2b7c4080-0ddd-46c5-8f23-563fd3ba789d']"
+    state: present
+
+- name: Configure profile background-color in Tilix
+  dconf:
+    key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/background-color"
+    value: "'#282936'"
+    state: present
+
+- name: Configure profile foreground-color in Tilix
+  dconf:
+    key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/foreground-color"
+    value: "'#F8F8F2'"
+    state: present
+
+- name: Configure profile background-transparency-percent in Tilix
+  dconf:
+    key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/background-transparency-percent"
+    value: "4"
+    state: present
+
+- name: Configure profile palette in Tilix
+  dconf:
+    key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/palette"
+    value: "['#282829293636', '#FF5454', '#50FA7B', '#F1FA8C', '#BD93F9', '#FF79C6', '#8BE8FD', '#BFBFBF', '#4D4D4D', '#FF6E67', '#5AF78D', '#F4F99D', '#CAA8FA', '#FF92D0', '#9AEDFE', '#E6E6E6']"
+    state: present
+
+- name: Configure profile font in Tilix
+  dconf:
+    key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/font"
+    value: "'JetBrains Mono 12'"
+    state: present
+
+- name: Configure show-scrollbar in Tilix
+  dconf:
+    key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/show-scrollbar"
+    value: "false"
+    state: present
+
+- name: Configure terminal-bell in Tilix
+  dconf:
+    key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/terminal-bell"
+    value: "'icon'"
+    state: present
+
+- name: Configure profile terminal-title in Tilix
+  dconf:
+    key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/terminal-title"
+    value: "''"
+    state: present
+
+- name: Configure profile use-theme-colors in Tilix
+  dconf:
+    key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/use-theme-colors"
+    value: "false"
     state: present
