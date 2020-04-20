@@ -15,6 +15,8 @@
     src: "{{ role_path }}/files/Dracula.tmTheme"
     dest: "~/.config/bat/themes/Dracula.tmTheme"
     state: link
+  register: theme
 
 - name: Build cache
   shell: bat cache --build
+  when: theme.changed
