@@ -10,6 +10,6 @@ ______   _______ _________ _______ _________ _        _______  _______
 
 ```
 
-Personal dotfiles managed by Ansible.
+Dotfiles and system configuration managed by Ansible.
 
 Execute `bootstrap.sh` to run the playbook.
