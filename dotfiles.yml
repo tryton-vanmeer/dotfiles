@@ -14,5 +14,6 @@
     - { role: nano, tags: ["nano"] }
     - { role: ncspot, tags: ["ncspot"] }
     - { role: starship, tags: ["starship"] }
+    - { role: systemd, tags: ["systemd"] }
     - { role: tilix, tags: ["tilix"] }
     - { role: wget, tags: ["wget"] }
