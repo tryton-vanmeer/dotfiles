@@ -1,0 +1,11 @@
+---
+- name: Create ~/.config/ncspot
+  file:
+    dest: "~/.config/nano"
+    state: directory
+
+- name: Link config.toml
+  file:
+    src: "{{ role_path }}/files/config.toml"
+    dest: "~/.config/ncspot/config.toml"
+    state: link
