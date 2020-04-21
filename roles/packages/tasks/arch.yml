@@ -111,6 +111,7 @@
   with_items:
     - inxi
     - ncspot
+    - openrgb-git
     - pfetch
     - starship
     - tty-clock
