@@ -1,0 +1,7 @@
+---
+- name: Enable sudo access for sudo group
+  replace:
+    path: /etc/sudoers
+    regexp: '^#\s*%sudo\s+ALL=\(ALL\)\s+ALL'
+    replace: '%sudo ALL=(ALL) ALL'
+  become: true
