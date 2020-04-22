@@ -71,6 +71,7 @@
     - pandoc
     - peek
     - piper
+    - pkgfile
     - plasma-browser-integration
     - python-nautilus
     - python-virtualenv
