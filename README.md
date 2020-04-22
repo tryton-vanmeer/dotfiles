@@ -33,6 +33,10 @@ Configs for nano.
 
 Configs for [ncspot](https://github.com/hrkfdn/ncspot).
 
+### pacman
+
+Configs for pacman, enabling repos, and adding pacman hooks.
+
 ### packages
 
 The packages to install based on Distro or Host.
