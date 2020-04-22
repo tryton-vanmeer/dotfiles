@@ -22,8 +22,14 @@ Configs for [fish shell](https://github.com/fish-shell/fish-shell).
 
 Configs for Git.
 
+### groups
+
+Add the user to various groups.
+
 ### hide_apps
 
+Symlinks a .desktop file to ~/.local/share/applications to hide
+multiple apps from the menu.
 
 ### nano
 
@@ -32,10 +38,6 @@ Configs for nano.
 ### ncspot
 
 Configs for [ncspot](https://github.com/hrkfdn/ncspot).
-
-### pacman
-
-Configs for pacman, enabling repos, and adding pacman hooks.
 
 ### packages
 
@@ -47,9 +49,17 @@ Currently the supported Distros are:
 
 And Flatpak packages are installed on all systems.
 
+### pacman
+
+Configs for pacman, enabling repos, and adding pacman hooks.
+
 ### starship
 
 Configs for [starship](https://github.com/starship/starship).
+
+### sudo
+
+Enable sudo access for users in the sudo group.
 
 ### systemd
 
