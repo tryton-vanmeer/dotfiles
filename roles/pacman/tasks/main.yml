@@ -13,6 +13,14 @@
     replace: 'VerbosePkgLists'
   become: true
 
+- name: Enable pacman easter egg
+  lineinfile:
+    path: /etc/pacman.conf
+    insertafter: "Color"
+    line: "ILoveCandy"
+    state: present
+  become: true
+
 - name: Link mirror upgrade pacman hook
   file:
     src: "{{ role_path }}/files/100-mirrorupgrade.hook"
