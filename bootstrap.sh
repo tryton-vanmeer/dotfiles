@@ -11,4 +11,4 @@ if [[ $# -gt 0 ]]; then
     tags="--tags=$(join , "$@")"
 fi
 
-ansible-playbook -i .inventory dotfiles.yml --ask-become-pass --extra-vars "localuser=$USER" "$tags"
+ansible-playbook dotfiles.yml --ask-become-pass --extra-vars "localuser=$USER" "$tags"
