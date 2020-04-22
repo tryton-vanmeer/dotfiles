@@ -11,3 +11,4 @@
     - libvirtd
     - NetworkManager
     - sshd
+  when: ansible_distribution == "Archlinux"
