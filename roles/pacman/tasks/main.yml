@@ -1,0 +1,14 @@
+---
+  - name: Enable pacman colourised output
+    replace:
+      path: /etc/pacman.conf
+      regexp: '^#Color$'
+      replace: 'Color'
+    become: true
+
+  - name: Enable pacman verbose package lists
+    replace:
+      path: /etc/pacman.conf
+      regexp: '^#VerbosePkgLists$'
+      replace: 'VerbosePkgLists'
+    become: true
