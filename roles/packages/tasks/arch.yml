@@ -54,6 +54,7 @@
     - gnome-usage
     - gnome-weather
     - gparted
+    - gvfs-mtp
     - htop
     - hugo
     - libreoffice-fresh
