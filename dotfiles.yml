@@ -5,7 +5,6 @@
   vars:
     user: "{{ localuser }}"
   roles:
-    - { role: pacman, tags: ["pacman"] }
     - { role: packages, tags: ["packages"] }
     - { role: hide_apps, tags: ["hide_apps"] }
     - { role: bat, tags: ["bat"] }
@@ -13,6 +12,7 @@
     - { role: git, tags: ["git"] }
     - { role: nano, tags: ["nano"] }
     - { role: ncspot, tags: ["ncspot"] }
+    - { role: pacman, tags: ["pacman"] }
     - { role: starship, tags: ["starship"] }
     - { role: systemd, tags: ["systemd"] }
     - { role: tilix, tags: ["tilix"] }
