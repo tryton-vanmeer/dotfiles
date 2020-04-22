@@ -3,7 +3,7 @@
   user:
     name: "{{ localuser }}"
     groups: "{{ item }}"
-    append: True
+    append: true
   with_items:
     - libvirt
     - sudo
