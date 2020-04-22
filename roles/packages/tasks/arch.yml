@@ -67,7 +67,8 @@
     - networkmanager
     - noto-fonts-cjk
     - noto-fonts-emoji
-    - ntfs-3g
+    - ntfs-3
+    - openssh
     - pandoc
     - peek
     - piper
