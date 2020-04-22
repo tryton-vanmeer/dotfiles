@@ -1,0 +1,10 @@
+---
+- name: Add user to groups
+  user:
+    name: "{{ localuser }}"
+    groups: "{{ item }}"
+    append: True
+  with_items:
+    - libvirt
+    - sudo
+  become: true

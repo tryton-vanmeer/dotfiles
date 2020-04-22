@@ -10,6 +10,7 @@
     - { role: bat, tags: ["bat"] }
     - { role: fish, tags: ["fish"] }
     - { role: git, tags: ["git"] }
+    - { role: groups, tags: ["groups"] }
     - { role: nano, tags: ["nano"] }
     - { role: ncspot, tags: ["ncspot"] }
     - { role: pacman, tags: ["pacman"] }
