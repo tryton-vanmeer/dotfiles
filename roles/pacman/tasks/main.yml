@@ -12,3 +12,10 @@
       regexp: '^#VerbosePkgLists$'
       replace: 'VerbosePkgLists'
     become: true
+
+  - name: Link mirror upgrade pacman hook
+    file:
+      src: "{{ role_path }}/files/100-mirrorupgrade.hook"
+      dest: "/etc/pacman.d/hooks/100-mirrorupgrade.hook"
+      state: link
+    become: true
