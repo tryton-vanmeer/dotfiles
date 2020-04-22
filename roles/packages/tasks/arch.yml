@@ -1,8 +1,6 @@
 ---
 - name: Installing pacakges (Arch)
   become: true
-  become_user: root
-  become_method: sudo
   package:
     name: "{{ item }}"
     state: present
