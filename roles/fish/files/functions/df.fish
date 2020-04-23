@@ -1,3 +1,3 @@
 function df
-    /usr/bin/df -h
+    env df -h
 end

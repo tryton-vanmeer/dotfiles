@@ -1,3 +1,3 @@
 function less
-    /usr/bin/bat $argv
+    bat $argv
 end

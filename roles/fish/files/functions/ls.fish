@@ -1,3 +1,3 @@
 function ls
-    /usr/bin/exa --group-directories-first --git $argv
+    exa --group-directories-first --git $argv
 end
