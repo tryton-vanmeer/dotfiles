@@ -1,7 +1,7 @@
 ---
 - name: Create ~/.config/ncspot
   file:
-    dest: "~/.config/nano"
+    dest: "~/.config/ncspot"
     state: directory
 
 - name: Link config.toml
