@@ -13,6 +13,7 @@
     - { role: groups, tags: ["groups"] }
     - { role: nano, tags: ["nano"] }
     - { role: ncspot, tags: ["ncspot"] }
+    - { role: npm, tags: ["npm"] }
     - { role: pacman, tags: ["pacman"] }
     - { role: starship, tags: ["starship"] }
     - { role: sudo, tags: ["sudo"] }
