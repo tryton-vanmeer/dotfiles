@@ -11,7 +11,6 @@
     remote: flathub
     state: present
   with_items:
-    - com.github.bilelmoussaoui.Authenticator
     - com.leinardi.gst
     - com.spotify.Client
     - com.teamspeak.TeamSpeak
