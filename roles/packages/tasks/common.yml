@@ -10,7 +10,6 @@
     - asciiquarium
     - baobab
     - bat
-    # - celluloid
     - chrome-gnome-shell
     - dconf-editor
     - eog
@@ -60,7 +59,6 @@
     - rust
     - seahorse
     - sudo
-    # - telegram-desktop
     - tilix
     - toolbox
     - vala
