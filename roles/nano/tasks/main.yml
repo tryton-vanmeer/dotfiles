@@ -4,8 +4,8 @@
     dest: "~/.config/nano"
     state: directory
 
-- name: Link nanorc
-  file:
-    src: "{{ role_path }}/files/nanorc"
+- name: Template out nanorc
+  template:
+    src: "{{ role_path }}/files/nanorc.j2"
     dest: "~/.config/nano/nanorc"
-    state: link
+    lstrip_blocks: yes

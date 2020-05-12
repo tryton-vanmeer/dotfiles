@@ -1,0 +1,7 @@
+{% if ansible_distribution == "Archlinux" %}
+include /usr/share/nano-syntax-highlighting/*.nanorc
+{% endif %}
+include /usr/share/nano/*
+
+set tabsize 4
+set tabstospaces
