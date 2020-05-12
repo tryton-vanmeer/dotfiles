@@ -6,5 +6,5 @@
     append: true
   with_items:
     - libvirt
-    - sudo
+    - wheel
   become: true
