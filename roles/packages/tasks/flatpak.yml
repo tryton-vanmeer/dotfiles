@@ -1,5 +1,6 @@
 ---
 - name: Add the flathub flatpak repository remote
+  become: true
   flatpak_remote:
     name: flathub
     state: present
