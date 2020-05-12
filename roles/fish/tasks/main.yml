@@ -39,3 +39,10 @@
     dest: "~/.config/fish/functions/{{ item | basename }}"
     state: link
   with_fileglob: functions/*
+
+- name: Change users shell to Fish
+  become: true
+  user:
+    name: "{{ user }}"
+    shell: "/usr/bin/fish"
+    append: true
