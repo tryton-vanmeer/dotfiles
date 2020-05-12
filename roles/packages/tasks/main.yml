@@ -1,4 +1,6 @@
 ---
+- include_tasks: common.yml
+
 - include_tasks: arch.yml
   when: ansible_distribution == "Archlinux"
 

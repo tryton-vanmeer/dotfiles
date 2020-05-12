@@ -1,0 +1,19 @@
+---
+- name: Installing packages (Common)
+  become: true
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
