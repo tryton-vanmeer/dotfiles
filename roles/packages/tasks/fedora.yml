@@ -58,6 +58,7 @@
     - piper
     - plasma-browser-integration
     - python3-bpython
+    - python3-psutil
     - python3-virtualenv
     - ranger
     - rust

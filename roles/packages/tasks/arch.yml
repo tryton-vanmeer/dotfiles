@@ -74,6 +74,7 @@
     - pkgfile
     - plasma-browser-integration
     - python-nautilus
+    - python-psutil
     - python-virtualenv
     - ranger
     - reflector
