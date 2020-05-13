@@ -41,3 +41,14 @@
   with_items:
     - celluloid
     - telegram-desktop
+
+- name: Uninstalling packages (Fedora)
+  become: true
+  package:
+    name: "{{ item }}"
+    state: absent
+  with_items:
+    - gnome-photos
+    - gnome-terminal
+    - rhythmbox
+    - totem
