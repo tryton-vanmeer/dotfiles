@@ -1,3 +1,4 @@
+---
 - name: Enable pacman colourised output
   replace:
     path: /etc/pacman.conf
