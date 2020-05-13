@@ -1,6 +1,5 @@
 ---
-- name: Link starship config
-  file:
-    src: "{{ role_path }}/files/starship.toml"
+- name: template out starship config
+  template:
+    src: "{{ role_path }}/files/starship.toml.j2"
     dest: "~/.config/starship.toml"
-    state: link
