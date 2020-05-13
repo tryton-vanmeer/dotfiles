@@ -1,0 +1,8 @@
+---
+- name: Enable DNF Fastest Mirror
+  lineinfile:
+    path: /etc/dnf/dnf.conf
+    insertafter: "[main]"
+    line: "fastestmirror=True"
+    state: present
+  become: true
