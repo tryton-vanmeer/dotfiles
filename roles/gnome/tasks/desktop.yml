@@ -28,3 +28,21 @@
     key: "/org/gnome/desktop/interface/enable-hot-corners"
     value: "false"
     state: present
+
+- name: Set font
+  dconf:
+    key: "/org/gnome/desktop/interface/font-name"
+    value: "'Noto Sans 11'"
+    state: present
+
+- name: Set GTK theme
+  dconf:
+    key: "/org/gnome/desktop/interface/gtk-theme"
+    value: "'Adwaita-dark'"
+    state: present
+
+- name: Set monospace font
+  dconf:
+    key: "/org/gnome/desktop/interface/monospace-font-name"
+    value: "'JetBrains Mono 12'"
+    state: present
