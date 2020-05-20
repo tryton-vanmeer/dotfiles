@@ -80,13 +80,13 @@
 - name: Configure keybinding for switching applications
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/switch-applications"
-    value: "[]"
+    value: "@as []"
     state: present
 
 - name: Configure keybinding for switching applications (backwards)
   dconf:
     key: "/org/gnome/desktop/wm/keybindings/switch-applications-backward"
-    value: "[]"
+    value: "@as []"
     state: present
 
 - name: Configure keybindings for switching windows
