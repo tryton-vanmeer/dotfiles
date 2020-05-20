@@ -46,3 +46,9 @@
     key: "/org/gnome/desktop/interface/monospace-font-name"
     value: "'JetBrains Mono 12'"
     state: present
+
+- name: Configure showing notification in the lock screen
+  dconf:
+    key: "/org/gnome/desktop/notifications/show-in-lock-screen"
+    value: "false"
+    state: present
