@@ -64,3 +64,15 @@
     key: "/org/gnome/desktop/privacy/remember-recent-files"
     value: "false"
     state: present
+
+- name: Set disabled search providers
+  dconf:
+    key: "/org/gnome/desktop/search-providers/disabled"
+    value: "['org.gnome.clocks.desktop', 'org.gnome.Epiphany.desktop']"
+    state: present
+
+- name: Set enabled search providers
+  dconf:
+    key: "/org/gnome/desktop/search-providers/enabled"
+    value: "['org.gnome.design.IconLibrary.desktop']"
+    state: present
