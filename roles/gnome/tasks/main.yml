@@ -1,0 +1,8 @@
+---
+# - name:
+#   dconf:
+#     key: "/org/gnome"
+#     value: ""
+#     state: present
+
+- include_tasks: desktop.yml

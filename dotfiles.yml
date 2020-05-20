@@ -21,3 +21,4 @@
     - { role: systemd, tags: ["systemd"] }
     - { role: tilix, tags: ["tilix"] }
     - { role: wget, tags: ["wget"] }
+    - { role: gnome, tags: ["gnome"] }
