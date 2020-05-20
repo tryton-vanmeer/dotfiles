@@ -22,7 +22,7 @@
     value: "''"
     state: present
 
-- name: Configure in Tilix
+- name: Configure showing title in Tilix
   dconf:
     key: "/com/gexperts/Tilix/terminal-title-show-when-single"
     value: "false"
