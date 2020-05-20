@@ -76,3 +76,33 @@
     key: "/org/gnome/desktop/search-providers/enabled"
     value: "['org.gnome.design.IconLibrary.desktop']"
     state: present
+
+- name: Configure keybinding for switching applications
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-applications"
+    value: "[]"
+    state: present
+
+- name: Configure keybinding for switching applications (backwards)
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-applications-backward"
+    value: "[]"
+    state: present
+
+- name: Configure keybindings for switching windows
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-windows"
+    value: "['<Alt>Tab']"
+    state: present
+
+- name: Configure keybindings for switching windows (backwards)
+  dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-windows-backward"
+    value: "['<Shift><Alt>Tab']"
+    state: present
+
+- name: Set titlebar font
+  dconf:
+    key: "/org/gnome/desktop/wm/preferences/titlebar-font"
+    value: "'Noto Sans 11'"
+    state: present
