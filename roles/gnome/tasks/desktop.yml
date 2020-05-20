@@ -1,5 +1,5 @@
 ---
-- name:
+- name: Set desktop background
   dconf:
     key: "/org/gnome/desktop/background"
     value: "'file:///usr/share/backgrounds/gnome/adwaita-timed.xml'"
