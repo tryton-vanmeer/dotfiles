@@ -1,6 +1,6 @@
 ---
 - name: Set desktop background
   dconf:
-    key: "/org/gnome/desktop/background"
+    key: "/org/gnome/desktop/background/picture-uri"
     value: "'file:///usr/share/backgrounds/gnome/adwaita-timed.xml'"
     state: present
