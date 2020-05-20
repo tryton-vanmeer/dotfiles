@@ -52,3 +52,9 @@
     key: "/org/gnome/desktop/notifications/show-in-lock-screen"
     value: "false"
     state: present
+
+- name: Set acceleration profile of mouse
+  dconf:
+    key: "/org/gnome/desktop/peripherals/mouse/accel-profile"
+    value: "'flat'"
+    state: present
