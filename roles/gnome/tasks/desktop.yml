@@ -4,3 +4,27 @@
     key: "/org/gnome/desktop/background/picture-uri"
     value: "'file:///usr/share/backgrounds/gnome/adwaita-timed.xml'"
     state: present
+
+- name: Set clock format
+  dconf:
+    key: "/org/gnome/desktop/interface/clock-format"
+    value: "'12h'"
+    state: present
+
+- name: Configure showing weekday in clock
+  dconf:
+    key: "/org/gnome/desktop/interface/clock-show-weekday"
+    value: "true"
+    state: present
+
+- name: Set document font
+  dconf:
+    key: "/org/gnome/desktop/interface/document-font-name"
+    value: "'Liberation Sans 11'"
+    state: present
+
+- name: Configure hot corners
+  dconf:
+    key: "/org/gnome/desktop/interface/enable-hot-corners"
+    value: "false"
+    state: present
