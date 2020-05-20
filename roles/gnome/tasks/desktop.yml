@@ -58,3 +58,9 @@
     key: "/org/gnome/desktop/peripherals/mouse/accel-profile"
     value: "'flat'"
     state: present
+
+- name: Configure remembering recent files
+  dconf:
+    key: "/org/gnome/desktop/privacy/remember-recent-files"
+    value: "false"
+    state: present
