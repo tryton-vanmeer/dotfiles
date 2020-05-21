@@ -23,3 +23,4 @@
     - { role: wget, tags: ["wget"] }
     - { role: gedit, tags: ["gedit"] }
     - { role: gnome, tags: ["gnome"] }
+    - { role: mangohud, tags: ["mangohud"] }
