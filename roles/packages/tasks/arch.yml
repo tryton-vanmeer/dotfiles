@@ -50,6 +50,8 @@
     use: "yay"
   with_items:
     - inxi
+    - mangohud
+    - lib32-mangohud
     - ncspot
     - openrgb-git
     - pfetch
