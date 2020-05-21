@@ -1,0 +1,11 @@
+---
+- name: Create ~/.config/MangoHud
+  file:
+    dest: "~/.config/MangoHud"
+    state: directory
+
+- name: Link MangoHud.conf
+  file:
+    src: "{{ role_path }}/files/MangoHud.conf"
+    dest: "~/.config/MangoHud/MangoHud.conf"
+    state: link
