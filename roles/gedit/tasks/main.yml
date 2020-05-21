@@ -20,3 +20,33 @@
     src: "{{ role_path }}/files/dracula.xml"
     dest: "~/.local/share/gtksourceview-3.0/styles/dracula.xml"
     state: link
+
+- name: Set displaying right margin
+  dconf:
+    key: "/org/gnome/gedit/preferences/editor/display-right-margin"
+    value: "true"
+    state: present
+
+- name: Set highlighting current line
+  dconf:
+    key: "/org/gnome/gedit/preferences/editor/highlight-current-line"
+    value: "false"
+    state: present
+
+- name: Set insert spaces instead of tabs
+  dconf:
+    key: "/org/gnome/gedit/preferences/editor/insert-spaces"
+    value: "true"
+    state: present
+
+- name: Set style scheme
+  dconf:
+    key: "/org/gnome/gedit/preferences/editor/scheme"
+    value: "'dracula'"
+    state: present
+
+- name: Set tab size
+  dconf:
+    key: "/org/gnome/gedit/preferences/editor/tabs-size"
+    value: "4"
+    state: present
