@@ -1,0 +1,22 @@
+---
+- name: Create ~/.local/share/gtksourceview-4/styles
+  file:
+    dest: "~/.local/share/gtksourceview-4/styles"
+    state: directory
+
+- name: Create ~/.local/share/gtksourceview-3.0/styles
+  file:
+    dest: "~/.local/share/gtksourceview-3.0/styles"
+    state: directory
+
+- name: Link dracula.xml (gtksourceview-4)
+  file:
+    src: "{{ role_path }}/files/dracula.xml"
+    dest: "~/.local/share/gtksourceview-4/styles/dracula.xml"
+    state: link
+
+- name: Link dracula.xml (gtksourceview-3.0)
+  file:
+    src: "{{ role_path }}/files/dracula.xml"
+    dest: "~/.local/share/gtksourceview-3.0/styles/dracula.xml"
+    state: link
