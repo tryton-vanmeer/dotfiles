@@ -5,38 +5,56 @@
     value: "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']"
     state: present
 
-- name:
+- name: Set up custom binding for Tilix (keybind)
   dconf:
     key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding"
     value: "'<Primary><Alt>t'"
     state: present
 
-- name:
+- name: Set up custom binding for Tilix (command)
   dconf:
     key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command"
     value: "'tilix'"
     state: present
 
-- name:
+- name: Set up custom binding for Tilix (name)
   dconf:
     key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name"
     value: "'Open Terminal'"
     state: present
 
-- name:
+- name: Set up custom binding for Files (keybind)
   dconf:
     key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/binding"
     value: "'<Super>e'"
     state: present
 
-- name:
+- name: Set up custom binding for Files (command)
   dconf:
     key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/command"
     value: "'nautilus'"
     state: present
 
-- name:
+- name: Set up custom binding for Files (name)
   dconf:
     key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/name"
     value: "'Open Files'"
+    state: present
+
+- name: Set power button action
+  dconf:
+    key: "/org/gnome/settings-daemon/plugins/power/power-button-action"
+    value: "'nothing'"
+    state: present
+
+- name: Set sleep timeout
+  dconf:
+    key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-timeout"
+    value: "3600"
+    state: present
+
+- name: Set sleep inactive type
+  dconf:
+    key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-type"
+    value: "'nothing'"
     state: present
