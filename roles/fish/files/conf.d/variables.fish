@@ -15,7 +15,7 @@ set -x XAUTHORITY "$XDG_RUNTIME_DIR/Xauthority"
 set -x WINEPREFIX "$XDG_DATA_HOME/wineprefixes/default"
 set -x WGETRC "$XDG_CONFIG_HOME/wgetrc"
 set -x LESSHISTFILE "-"
-set -x _JAVA_OPTIONS "-"
+set -x _JAVA_OPTIONS -Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 set -x ANDROID_SDK_HOME "$XDG_CONFIG_HOME/android"
 set -x CARGO_HOME "$XDG_DATA_HOME/cargo"
 set -x GNUPGHOME "$XDG_DATA_HOME/gnupg"
