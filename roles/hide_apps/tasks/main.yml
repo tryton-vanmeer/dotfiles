@@ -14,9 +14,9 @@
     - electron6
     - electron7
     - htop
-    - java-java11-openjdk
-    - jconsole-java11-openjdk
-    - jshell-java11-openjdk
+    - java-java-openjdk
+    - jconsole-java-openjdk
+    - jshell-java-openjdk
     - linguist
     - lstopo
     - mpv
