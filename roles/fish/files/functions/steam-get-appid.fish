@@ -1,4 +1,4 @@
-function steam_get_appid
+function steam-get-appid
     # Grep appmanifest files in all Steam libraries for games with $arg in name
 
     grep -Ei "name.*$argv[1]" $steam_dirs \
