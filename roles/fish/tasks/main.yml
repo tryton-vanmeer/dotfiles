@@ -5,6 +5,12 @@
     name: "fish"
     state: present
 
+- name: Install Exa
+  become: true
+  package:
+    name: "exa"
+    state: present
+
 - name: Create ~/.config/fish
   file:
     dest: "~/.config/fish"
