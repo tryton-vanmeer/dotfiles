@@ -16,7 +16,6 @@
     state: present
   with_items:
     - mangohud
-    - lib32-mangohud
   when: ansible_distribution == "Fedora"
 
 - name: Create ~/.config/MangoHud
