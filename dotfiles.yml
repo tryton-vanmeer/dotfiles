@@ -14,7 +14,6 @@
     - { role: npm, tags: ["npm"] }
     - { role: pacman, tags: ["pacman"] }
     - { role: starship, tags: ["starship"] }
-    - { role: sudo, tags: ["sudo"] }
     - { role: tilix, tags: ["tilix"] }
     - { role: wget, tags: ["wget"] }
     - { role: gedit, tags: ["gedit"] }
