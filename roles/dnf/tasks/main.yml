@@ -1,3 +1,0 @@
----
-- include_tasks: dnf.yml
-  when: ansible_distribution == "Fedora"

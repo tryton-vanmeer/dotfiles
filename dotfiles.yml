@@ -5,7 +5,6 @@
   vars:
     user: "{{ localuser }}"
   roles:
-    - { role: dnf, tags: [dnf] }
     - { role: packages, tags: ["packages"] }
     - { role: hide_apps, tags: ["hide_apps"] }
     - { role: bat, tags: ["bat"] }
