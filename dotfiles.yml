@@ -18,7 +18,6 @@
     - { role: pacman, tags: ["pacman"] }
     - { role: starship, tags: ["starship"] }
     - { role: sudo, tags: ["sudo"] }
-    - { role: systemd, tags: ["systemd"] }
     - { role: tilix, tags: ["tilix"] }
     - { role: wget, tags: ["wget"] }
     - { role: gedit, tags: ["gedit"] }
