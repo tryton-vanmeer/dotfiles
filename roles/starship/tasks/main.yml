@@ -4,12 +4,14 @@
     name: "starship"
     skip_installed: yes
     use: "yay"
+  when: ansible_distribution == "ArchLinux"
 
 - name: Install Starship (Fedora)
   become: true
   package:
     name: "starship"
     state: present
+  when: ansible_distribution == "Fedora"
 
 - name: template out starship config
   template:
