@@ -6,10 +6,10 @@ run_init()
 
     case "$os_release" in
     *"Arch Linux"*)
-        echo "I am Arch Linux"
+        sudo pacman -S ansible python-psutil
         ;;
     *"Fedora"*)
-        echo "I am Fedora"
+        sudo dnf install ansible python3-psutil
         ;;
     esac
 }
