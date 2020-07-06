@@ -1,18 +1,16 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-join()
+run_ansible()
 {
-    IFS="$1"
-    shift
-    echo "$*"
+    if [ -z "$1" ]; then
+        ansible-playbook dotfiles.yml --ask-become-pass --extra-vars "localuser=$USER"
+    else
+        ansible-playbook dotfiles.yml --ask-become-pass --extra-vars "localuser=$USER" "$1"
+    fi
 }
 
-if [[ $# -gt 0 ]]; then
-    tags="--tags=$(join , "$@")"
-fi
-
-if [[ -z ${tags+x} ]]; then
-    ansible-playbook dotfiles.yml --ask-become-pass --extra-vars "localuser=$USER"
+if [ -z "$1" ]; then
+    run_ansible
 else
-    ansible-playbook dotfiles.yml --ask-become-pass --extra-vars "localuser=$USER" "$tags"
+    run_ansible "--tags=$1"
 fi
