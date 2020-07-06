@@ -1,4 +1,23 @@
 ---
+- name: Install Mangohud (Arch Linux)
+  aur:
+    name: "{{ item }}"
+    skip_installed: yes
+    use: "yay"
+  with_items:
+    - mangohud
+    - lib32-mangohud
+  when: ansible_distribution == "ArchLinux"
+
+- name: Install Mangohud (Fedora)
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - mangohud
+    - lib32-mangohud
+  when: ansible_distribution == "Fedora"
+
 - name: Create ~/.config/MangoHud
   file:
     dest: "~/.config/MangoHud"

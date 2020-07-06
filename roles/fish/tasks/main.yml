@@ -1,4 +1,9 @@
 ---
+- name: Install Fish
+  package:
+    name: "fish"
+    state: present
+
 - name: Create ~/.config/fish
   file:
     dest: "~/.config/fish"

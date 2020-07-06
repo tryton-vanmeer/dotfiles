@@ -1,4 +1,9 @@
 ---
+- name: Install bat
+  package:
+    name: "bat"
+    state: present
+
 - name: Create ~/.config/bat/themes
   file:
     dest: "~/.config/bat/themes"

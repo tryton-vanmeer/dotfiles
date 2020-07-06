@@ -1,4 +1,15 @@
 ---
+- name: Install Starship (Arch Linux)
+  aur:
+    name: "starship"
+    skip_installed: yes
+    use: "yay"
+
+- name: Install Starship (Fedora)
+  package:
+    name: "starship"
+    state: present
+
 - name: template out starship config
   template:
     src: "{{ role_path }}/files/starship.toml.j2"
