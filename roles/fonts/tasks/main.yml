@@ -1,0 +1,14 @@
+---
+- name: Install JetBrains Mono (Arch Linux)
+  become: true
+  package:
+    name: ttf-jetbrains-mono
+    state: present
+  when: ansible_distribution == "ArchLinux"
+
+- name: Install JetBrains Mono (Fedora)
+  become: true
+  package:
+    name: jetbrains-mono-fonts-all
+    state: present
+  when: ansible_distribution == "Fedora"

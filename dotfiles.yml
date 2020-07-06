@@ -19,3 +19,4 @@
     - { role: gedit, tags: ["gedit"] }
     - { role: gnome, tags: ["gnome"] }
     - { role: mangohud, tags: ["mangohud"] }
+    - { role: fonts, tags: ["fonts"] }
