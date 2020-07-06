@@ -1,4 +1,10 @@
 ---
+- name: Install reflector
+  become: true
+  package:
+    name: "reflector"
+    state: present
+
 - name: Enable pacman colourised output
   replace:
     path: /etc/pacman.conf
