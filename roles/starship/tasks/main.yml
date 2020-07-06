@@ -6,6 +6,7 @@
     use: "yay"
 
 - name: Install Starship (Fedora)
+  become: true
   package:
     name: "starship"
     state: present

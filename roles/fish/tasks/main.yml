@@ -1,5 +1,6 @@
 ---
 - name: Install Fish
+  become: true
   package:
     name: "fish"
     state: present

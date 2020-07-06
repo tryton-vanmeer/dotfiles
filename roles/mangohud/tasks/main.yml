@@ -10,6 +10,7 @@
   when: ansible_distribution == "ArchLinux"
 
 - name: Install Mangohud (Fedora)
+  become: true
   package:
     name: "{{ item }}"
     state: present

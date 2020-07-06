@@ -1,5 +1,6 @@
 ---
 - name: Install bat
+  become: true
   package:
     name: "bat"
     state: present
