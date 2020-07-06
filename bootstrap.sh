@@ -12,6 +12,8 @@ run_init()
         sudo dnf install ansible python3-psutil
         ;;
     esac
+
+    git submodule update --init --recursive
 }
 
 run_ansible()
