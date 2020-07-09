@@ -11,6 +11,7 @@ set -x XDG_CONFIG_HOME "$HOME/.config"
 set -x XDG_CACHE_HOME "$HOME/.cache"
 
 # Dotfiles
+set -x ICEAUTHORITY "$XDG_CACHE_HOME/ICEauthority"
 set -x XAUTHORITY "$XDG_RUNTIME_DIR/Xauthority"
 set -x WINEPREFIX "$XDG_DATA_HOME/wineprefixes/default"
 set -x WGETRC "$XDG_CONFIG_HOME/wgetrc"
