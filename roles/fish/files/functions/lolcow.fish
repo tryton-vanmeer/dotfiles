@@ -1,3 +1,3 @@
 function lolcow
-    fortune | cowsay | nms | lolcat
+    fortune | cowsay | lolcat
 end
