@@ -1,0 +1,7 @@
+---
+- name: Install VSCode (Arch Linux)
+  become: true
+  package:
+    name: "code"
+    state: present
+  when: ansible_distribution == "ArchLinux"
