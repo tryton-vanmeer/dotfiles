@@ -1,0 +1,6 @@
+---
+- name: Install VSCode
+  become: true
+  package:
+    name: "code"
+    state: present
