@@ -4,6 +4,8 @@
   remote_user: "{{ localuser }}"
   vars:
     user: "{{ localuser }}"
+    vscode_extensions:
+      - vscoss.vscode-ansible
   roles:
     - { role: hide_apps, tags: ["hide_apps"] }
     - { role: bat, tags: ["bat"] }
