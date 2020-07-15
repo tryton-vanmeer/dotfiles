@@ -1,9 +1,8 @@
 ---
 - name: Add VSCodium GPG key
   rpm_key:
-    become: true
     state: present
-    key: "https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg"
+    key: https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
 
 - name: Add VSCodium Repo
   yum_repository:
