@@ -39,5 +39,7 @@
     },
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "projectManager.groupList": true,
+    "projectManager.git.baseFolders": [
+      "$home/Code",
+    ],
 }
