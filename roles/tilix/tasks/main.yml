@@ -1,5 +1,5 @@
 ---
-- name: Install Tilix
+- name: Install tilix
   become: true
   package:
     name: "tilix"

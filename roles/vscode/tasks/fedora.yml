@@ -1,11 +1,11 @@
 ---
-- name: Add VSCodium GPG key
+- name: Add codium gpg key
   become: true
   rpm_key:
     state: present
     key: https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
 
-- name: Add VSCodium Repo
+- name: Add codium Repo
   become: true
   yum_repository:
     name: "gitlab.com_paulcarroty_vscodium_repo"
@@ -15,13 +15,13 @@
     enabled: yes
     gpgcheck: yes
 
-- name: Install VSCodium
+- name: Install codium
   become: true
   package:
     name: "codium"
     state: present
 
-- name: Install Extensions
+- name: Install extensions
   shell:
     cmd: codium --install-extension "{{ item }}"
     creates: "~/.vscode-oss/extensions/{{ item }}-*"
@@ -43,13 +43,13 @@
     - timonwong.shellcheck
     - rust-lang.rust
 
-- name: Link Keybindings
+- name: Link keybindings
   file:
     src: "{{ role_path }}/files/keybindings.json"
     dest: "~/.config/VSCodium/User/keybindings.json"
     state: link
 
-- name: Link Settings
+- name: Link settings
   file:
     src: "{{ role_path }}/files/settings.json"
     dest: "~/.config/VSCodium/User/settings.json"

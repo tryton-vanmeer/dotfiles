@@ -1,11 +1,11 @@
 ---
-- name: Install Fish
+- name: Install fish
   become: true
   package:
     name: "fish"
     state: present
 
-- name: Install Exa
+- name: Install exa
   become: true
   package:
     name: "exa"

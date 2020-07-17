@@ -1,5 +1,5 @@
 ---
-- name: Install Mangohud (Arch Linux)
+- name: Install mangohud (Arch Linux)
   aur:
     name: "{{ item }}"
     skip_installed: yes
@@ -9,7 +9,7 @@
     - lib32-mangohud
   when: ansible_distribution == "ArchLinux"
 
-- name: Install Mangohud (Fedora)
+- name: Install mangohud (Fedora)
   become: true
   package:
     name: "{{ item }}"

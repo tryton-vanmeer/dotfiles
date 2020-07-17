@@ -1,11 +1,11 @@
 ---
-- name: Install VSCode
+- name: Install code
   become: true
   package:
     name: "code"
     state: present
 
-- name: Install Extensions
+- name: Install extensions
   shell:
     cmd: code --install-extension "{{ item }}"
     creates: "~/.vscode-oss/extensions/{{ item }}-*"
@@ -36,13 +36,13 @@
     - samuelcolvin.jinjahtml
     - bungcip.better-toml
 
-- name: Link Keybindings
+- name: Link keybindings
   file:
     src: "{{ role_path }}/files/keybindings.json"
     dest: "~/.config/Code - OSS/User/keybindings.json"
     state: link
 
-- name: Link Settings
+- name: Link settings
   file:
     src: "{{ role_path }}/files/settings.json"
     dest: "~/.config/Code - OSS/User/settings.json"

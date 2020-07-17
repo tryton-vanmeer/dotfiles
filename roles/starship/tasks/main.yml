@@ -1,19 +1,19 @@
 ---
-- name: Install Starship (Arch Linux)
+- name: Install starship (Arch Linux)
   aur:
     name: "starship"
     skip_installed: yes
     use: "yay"
   when: ansible_distribution == "ArchLinux"
 
-- name: Install Starship (Fedora)
+- name: Install starship (Fedora)
   become: true
   package:
     name: "starship"
     state: present
   when: ansible_distribution == "Fedora"
 
-- name: template out starship config
+- name: Template starship config
   template:
     src: "{{ role_path }}/files/starship.toml.j2"
     dest: "~/.config/starship.toml"
