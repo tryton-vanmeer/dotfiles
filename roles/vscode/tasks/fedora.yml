@@ -27,6 +27,21 @@
     creates: "~/.vscode-oss/extensions/{{ item }}-*"
   with_items:
     - dracula-theme.theme-dracula
+    - bmalehorn.vscode-fish
+    - EditorConfig.EditorConfig
+    - vscjava.vscode-java-debug
+    - bungcip.better-toml
+    - samuelcolvin.jinjahtml
+    - redhat.vscode-xml
+    - redhat.vscode-yaml
+    - redhat.java
+    - Zignd.html-css-class-completion
+    - PKief.material-icon-theme
+    - ritwickdey.LiveServer
+    - adpyke.codesnap
+    - ms-python.python
+    - timonwong.shellcheck
+    - rust-lang.rust
 
 - name: Link Keybindings
   file:
