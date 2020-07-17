@@ -11,3 +11,15 @@
     creates: "~/.vscode-oss/extensions/{{ item }}-*"
   with_items:
     - dracula-theme.theme-dracula
+
+- name: Link Keybindings
+  file:
+    src: "{{ role_path }}/files/keybindings.json"
+    dest: "~/.config/Code - OSS/User/keybindings.json"
+    state: link
+
+- name: Link Settings
+  file:
+    src: "{{ role_path }}/files/settings.json"
+    dest: "~/.config/Code - OSS/User/settings.json"
+    state: link
