@@ -4,3 +4,10 @@
   package:
     name: "code"
     state: present
+
+- name: Install Extensions
+  shell:
+    cmd: code --install-extension "{{ item }}"
+    creates: "~/.vscode-oss/extensions/{{ item }}-*"
+  with_items:
+    - dracula-theme.theme-dracula
