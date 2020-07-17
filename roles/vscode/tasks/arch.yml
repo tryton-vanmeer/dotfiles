@@ -11,6 +11,30 @@
     creates: "~/.vscode-oss/extensions/{{ item }}-*"
   with_items:
     - dracula-theme.theme-dracula
+    - redhat.vscode-yaml
+    - redhat.vscode-xml
+    - prince781.vala
+    - alexcvzz.vscode-sqlite
+    - timonwong.shellcheck
+    - rust-lang.rust
+    - laurenttreguier.rpm-spec
+    - ms-python.python
+    - william-voyek.vscode-nginx
+    - asabil.meson
+    - pkief.material-icon-theme
+    - ritwickdey.liveserver
+    - torn4dom4n.latex-support
+    - redhat.java
+    - zignd.html-css-class-completion
+    - budparr.language-hugo-vscode
+    - efanzh.graphviz-preview
+    - stephanvs.dot
+    - bmalehorn.vscode-fish
+    - editorconfig.editorconfig
+    - vscjava.vscode-java-debug
+    - adpyke.codesnap
+    - samuelcolvin.jinjahtml
+    - bungcip.better-toml
 
 - name: Link Keybindings
   file:
