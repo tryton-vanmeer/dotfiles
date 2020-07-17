@@ -27,3 +27,15 @@
     creates: "~/.vscode-oss/extensions/{{ item }}-*"
   with_items:
     - dracula-theme.theme-dracula
+
+- name: Link Keybindings
+  file:
+    src: "{{ role_path }}/files/keybindings.json"
+    dest: "~/.config/VSCodium/User/keybindings.json"
+    state: link
+
+- name: Link Settings
+  file:
+    src: "{{ role_path }}/files/settings.json"
+    dest: "~/.config/VSCodium/User/settings.json"
+    state: link
