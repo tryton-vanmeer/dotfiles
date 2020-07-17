@@ -1,0 +1,43 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "java.referencesCodeLens.enabled": false,
+    "workbench.editor.enablePreview": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.statusBar.visible": true,
+    "window.menuBarVisibility": "toggle",
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+
+    "openInTerminal.app": "tilix",
+    "workbench.colorTheme": "Dracula",
+    "explorer.openEditors.visible": 0,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.suggestSelection": "first",
+    "window.zoomLevel": 0,
+    "editor.fontLigatures": true,
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+    },
+    "editor.minimap.enabled": false,
+    "terminal.external.linuxExec": "tilix",
+    "terminal.integrated.shell.linux": "/usr/bin/fish",
+    "editor.rulers": [80,120],
+    "[xml]": {},
+    "workbench.iconTheme": "material-icon-theme",
+    "mesonbuild.configureOnOpen": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "shellcheck.run": "onSave",
+    "rust-client.disableRustup": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "files.trimTrailingWhitespace": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "files.associations": {
+      "Containerfile": "dockerfile"
+    },
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "projectManager.groupList": true,
+}
