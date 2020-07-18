@@ -8,7 +8,7 @@
 - name: Set favorite apps
   dconf:
     key: "/org/gnome/shell/favorite-apps"
-    value: "['firefox.desktop', 'steam.desktop', 'code-oss.desktop', 'com.gexperts.Tilix.desktop', 'org.gnome.Nautilus.desktop']"
+    value: "['firefox.desktop', 'steam.desktop', 'code-oss.desktop', 'com.gexperts.Tilix.desktop', 'org.gnome.Nautilus.desktop']" # yamllint disable-line
     state: present
 
 - name: Configure workspaces on primary monitor
@@ -20,7 +20,7 @@
 - name: Configure weather location
   dconf:
     key: "/org/gnome/shell/weather/locations"
-    value: "[<(uint32 2, <('Ottawa', 'CYOW', true, [(0.79092504517986117, -1.3206324731601402)], [(0.7926703744318554, -1.3212142437597076)])>)>]"
+    value: "[<(uint32 2, <('Ottawa', 'CYOW', true, [(0.79092504517986117, -1.3206324731601402)], [(0.7926703744318554, -1.3212142437597076)])>)>]" # yamllint disable-line
     state: present
 
 - name: Set window switcher app icon mode

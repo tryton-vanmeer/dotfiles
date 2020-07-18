@@ -2,7 +2,7 @@
 - name: Install starship (Arch Linux)
   aur:
     name: "starship"
-    skip_installed: yes
+    skip_installed: true
     use: "yay"
   when: ansible_distribution == "ArchLinux"
 

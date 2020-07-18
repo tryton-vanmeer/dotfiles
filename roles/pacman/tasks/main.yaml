@@ -1,0 +1,3 @@
+---
+- include_tasks: pacman.yml
+  when: ansible_distribution == "Archlinux"

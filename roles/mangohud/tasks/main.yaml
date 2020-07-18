@@ -2,7 +2,7 @@
 - name: Install mangohud (Arch Linux)
   aur:
     name: "{{ item }}"
-    skip_installed: yes
+    skip_installed: true
     use: "yay"
   with_items:
     - mangohud
