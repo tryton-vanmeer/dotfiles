@@ -19,9 +19,9 @@ run_init()
 run_ansible()
 {
     if [ -z "$1" ]; then
-        ansible-playbook dotfiles.yml --ask-become-pass --extra-vars "localuser=$USER"
+        ansible-playbook dotfiles.yaml --ask-become-pass --extra-vars "localuser=$USER"
     else
-        ansible-playbook dotfiles.yml --ask-become-pass --extra-vars "localuser=$USER" "$1"
+        ansible-playbook dotfiles.yaml --ask-become-pass --extra-vars "localuser=$USER" "$1"
     fi
 }
 
