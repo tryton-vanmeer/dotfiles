@@ -5,6 +5,8 @@ set -U fish_emoji_width 2
 set -x BROWSER /usr/bin/firefox
 set -x EDITOR /usr/bin/nano
 
+set -x MICRO_TRUECOLOR 1
+
 # XDG
 set -x XDG_DATA_HOME "$HOME/.local/share"
 set -x XDG_CONFIG_HOME "$HOME/.config"
