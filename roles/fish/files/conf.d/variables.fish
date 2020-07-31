@@ -3,7 +3,7 @@ set -U fish_emoji_width 2
 
 # Default Programs
 set -x BROWSER /usr/bin/firefox
-set -x EDITOR /usr/bin/nano
+set -x EDITOR /usr/bin/micro
 
 set -x MICRO_TRUECOLOR 1
 
