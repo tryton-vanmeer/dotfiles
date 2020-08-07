@@ -5,9 +5,6 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "workbench.statusBar.visible": true,
     "window.menuBarVisibility": "toggle",
-    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
-
-    "openInTerminal.app": "tilix",
     "workbench.colorTheme": "Dracula",
     "explorer.openEditors.visible": 0,
     "editor.fontFamily": "JetBrains Mono",
@@ -27,7 +24,6 @@
     "[xml]": {},
     "workbench.iconTheme": "material-icon-theme",
     "mesonbuild.configureOnOpen": true,
-    "liveServer.settings.donotShowInfoMsg": true,
     "shellcheck.run": "onSave",
     "rust-client.disableRustup": true,
     "workbench.startupEditor": "newUntitledFile",
