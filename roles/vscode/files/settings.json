@@ -35,4 +35,5 @@
     },
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "java.semanticHighlighting.enabled": true,
 }
