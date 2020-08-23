@@ -3,12 +3,7 @@ add_newline = false
 [character]
 style_success = "fg:cyan"
 style_failure = "fg:cyan"
-{% if ansible_distribution == "Archlinux" %}
 symbol = "𝝺"
-{% endif %}
-{% if ansible_distribution == "Fedora" %}
-symbol = "ϝ"
-{% endif %}
 
 [directory]
 style = "fg:purple"
