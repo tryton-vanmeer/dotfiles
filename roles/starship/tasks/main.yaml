@@ -13,7 +13,8 @@
     state: present
   when: ansible_distribution == "Fedora"
 
-- name: Template starship config
-  template:
-    src: "{{ role_path }}/files/starship.toml.j2"
+- name: Link starship config
+  file:
+    src: "{{ role_path }}/files/starship.toml"
     dest: "~/.config/starship.toml"
+    state: link
