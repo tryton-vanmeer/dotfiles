@@ -9,7 +9,6 @@
     - {role: bat, tags: ["bat"]}
     - {role: fish, tags: ["fish"]}
     - {role: git, tags: ["git"]}
-    - {role: nano, tags: ["nano"]}
     - {role: micro, tags: ["micro"]}
     - {role: ncspot, tags: ["ncspot"]}
     - {role: npm, tags: ["npm"]}
