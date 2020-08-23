@@ -1,8 +1,8 @@
 add_newline = false
 
 [character]
-style_success = "fg:cyan"
-style_failure = "fg:cyan"
+style_success = "fg:red"
+style_failure = "fg:red"
 symbol = "𝝺"
 
 [directory]
