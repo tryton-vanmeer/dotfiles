@@ -31,10 +31,14 @@
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
     "files.associations": {
-      "Containerfile": "dockerfile"
+      "Containerfile": "dockerfile",
+      "*.xls": "excel"
     },
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "java.semanticHighlighting.enabled": true,
     "java.debug.settings.enableRunDebugCodeLens": false,
+    "codesnap.backgroundColor": "#282a36",
+    "codesnap.showWindowControls": false,
+    "codesnap.containerPadding": "1em",
 }
