@@ -17,6 +17,7 @@
     - java-java-openjdk
     - jconsole-java-openjdk
     - jshell-java-openjdk
+    - julia
     - linguist
     - lstopo
     - mpv
