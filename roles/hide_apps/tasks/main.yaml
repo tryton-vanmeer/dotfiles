@@ -25,6 +25,7 @@
     - qv4l2
     - qvidcap
     - ranger
+    - winetricks
     - xdvi
     - zenmap-root
     - zenmap
