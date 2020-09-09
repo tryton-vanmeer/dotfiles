@@ -1,3 +1,4 @@
+---
 colors:
   primary:
     background: "0x282a36"
@@ -35,3 +36,14 @@ colors:
     magenta: "0xff46b0"
     cyan:    "0x59dffc"
     white:   "0xe6e6d1"
+
+font:
+  size: 12
+  normal:
+    family: JetBrains Mono
+  bold:
+    family: JetBrains Mono
+    style: Bold
+  italic:
+    family: JetBrains Mono
+    style: Italic
