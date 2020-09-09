@@ -21,3 +21,4 @@
     - {role: mangohud, tags: ["mangohud"]}
     - {role: fonts, tags: ["fonts"]}
     - {role: vscode, tags: ["never", "vscode"]}
+    - {role: alacritty, tags: ["alacritty"]}

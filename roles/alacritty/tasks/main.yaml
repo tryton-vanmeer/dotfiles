@@ -1,0 +1,18 @@
+---
+- name: Install alacritty
+  become: true
+  package:
+    name: "alacritty"
+    state: present
+  when: ansible_distribution == "Archlinux"
+
+- name: Create ~/.config/alacritty
+  file:
+    dest: "~/.config/alacritty"
+    state: directory
+
+- name: Link config
+  file:
+    src: "{{ role_path }}/files/alacritty.yaml"
+    dest: "~/.config/alacritty/alacritty.yml"
+    state: link
