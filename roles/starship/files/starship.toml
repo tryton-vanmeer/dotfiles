@@ -1,12 +1,12 @@
 add_newline = false
 
 [character]
-style_success = "fg:red"
-style_failure = "fg:red"
-symbol = "𝝺"
+success_symbol = "[𝝺](bold red)"
+error_symbol = "[𝝺](bold red)"
 
 [directory]
-style = "fg:purple"
+format = "[$path](bold purple) "
+#style = "bold purple"
 truncation_length = 6
 
 [cmd_duration]
