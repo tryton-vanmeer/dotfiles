@@ -57,4 +57,3 @@
   user:
     name: "{{ user }}"
     shell: "/usr/bin/fish"
-    append: true
