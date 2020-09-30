@@ -1,3 +1,3 @@
-function df -d "df with human readable sizes"
-    env df --human-readable
+function df -w "pydf"
+    pydf $argv
 end
