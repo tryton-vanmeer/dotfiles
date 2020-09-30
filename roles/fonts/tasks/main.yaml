@@ -13,6 +13,13 @@
     state: present
   when: ansible_distribution == "ArchLinux"
 
+- name: Install Nerd Fonts (Arch Linux)
+  become: true
+  package:
+    name: "ttf-nerd-fonts-symbols"
+    state: present
+  when: ansible_distribution == "ArchLinux"
+
 - name: Install JetBrains Mono (Fedora)
   become: true
   package:
