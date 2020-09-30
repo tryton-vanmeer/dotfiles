@@ -11,6 +11,12 @@
     name: "exa"
     state: present
 
+- name: Install pydf
+  become: true
+  package:
+    name: "pydf"
+    state: present
+
 - name: Create ~/.config/fish
   file:
     dest: "~/.config/fish"
