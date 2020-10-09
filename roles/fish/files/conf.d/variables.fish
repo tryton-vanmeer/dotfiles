@@ -5,7 +5,9 @@ set -U fish_emoji_width 2
 set -x BROWSER /usr/bin/firefox
 set -x EDITOR /usr/bin/micro
 
+# App Settings
 set -x MICRO_TRUECOLOR 1
+set -x DOTNET_CLI_TELEMETRY_OPTOUT "1"
 
 # XDG
 set -x XDG_DATA_HOME "$HOME/.local/share"
@@ -29,4 +31,3 @@ set -x CCACHE_DIR "$XDG_CACHE_HOME/ccache"
 set -x PYLINTHOME "$XDG_CACHE_HOME/pylint"
 set -x NUGET_PACKAGES "$XDG_CACHE_HOME/NuGetPackages"
 set -x PSQL_HISTORY "$XDG_CACHE_HOME/pg/psql_history"
-set -x DOTNET_CLI_TELEMETRY_OPTOUT "1"
