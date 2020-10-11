@@ -8,6 +8,12 @@
 
 [core]
     excludesfile = ~/.config/git/ignore
+    pager = delta
+
+[delta]
+    plus-color = "#50fa7b"
+    minus-color = "#ff5555"
+    syntax-theme = Dracula
 
 [url "https://github.com/"]
  insteadOf = "gh:"
