@@ -5,4 +5,4 @@
 *.json~
 
 # Python
-venv/
+.venv/
