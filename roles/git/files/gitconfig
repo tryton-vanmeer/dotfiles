@@ -1,7 +1,3 @@
-#
-# ~/.gitconfig
-#
-
 [user]
     email = trytonvanmeer@protonmail.com
     name = Tryton Van Meer
