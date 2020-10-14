@@ -41,4 +41,5 @@
     "codesnap.showWindowControls": false,
     "codesnap.containerPadding": "1em",
     "java.refactor.renameFromFileExplorer": "autoApply",
+    "mesonbuild.buildFolder": "build",
 }
