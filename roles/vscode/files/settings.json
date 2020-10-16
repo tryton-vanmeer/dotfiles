@@ -23,7 +23,7 @@
     "editor.rulers": [80,120],
     "[xml]": {},
     "workbench.iconTheme": "material-icon-theme",
-    "mesonbuild.configureOnOpen": true,
+    "mesonbuild.configureOnOpen": false,
     "shellcheck.run": "onSave",
     "rust-client.disableRustup": true,
     "workbench.startupEditor": "newUntitledFile",
