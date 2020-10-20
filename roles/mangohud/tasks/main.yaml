@@ -3,7 +3,7 @@
   aur:
     name: "{{ item }}"
     skip_installed: true
-    use: "yay"
+    use: "paru"
   with_items:
     - mangohud
     - lib32-mangohud

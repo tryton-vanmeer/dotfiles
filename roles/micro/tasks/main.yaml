@@ -3,7 +3,7 @@
   aur:
     name: "micro"
     skip_installed: true
-    use: "yay"
+    use: "paru"
   when: ansible_distribution == "ArchLinux"
 
 - name: Install micro (Fedora)
