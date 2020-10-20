@@ -44,4 +44,7 @@
     "java.refactor.renameFromFileExplorer": "autoApply",
     "mesonbuild.buildFolder": "build",
     "d.servedPath": "/home/tryton-vanmeer/.local/share/code-d/bin/serve-d",
+    "dscanner.ignoredKeys": [
+      "dscanner.style.undocumented_declaration"
+    ],
 }
