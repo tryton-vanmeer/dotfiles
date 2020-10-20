@@ -11,8 +11,8 @@
     - bvnc
     - cmake-gui
     - designer
-    - electron6
-    - electron7
+    - electron
+    - electron9
     - htop
     - java-java-openjdk
     - jconsole-java-openjdk
