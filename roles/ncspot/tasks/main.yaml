@@ -1,4 +1,11 @@
 ---
+- name: Install ncspot (Arch Linux)
+  aur:
+    name: "ncspot"
+    skip_installed: true
+    use: "paru"
+  when: ansible_distribution == "ArchLinux"
+
 - name: Create ~/.config/ncspot
   file:
     dest: "~/.config/ncspot"
