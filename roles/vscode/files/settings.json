@@ -11,6 +11,7 @@
     "editor.suggestSelection": "first",
     "window.zoomLevel": 0,
     "editor.fontLigatures": true,
+    "editor.selectionClipboard": false,
     "files.exclude": {
       "**/.classpath": true,
       "**/.project": true,
