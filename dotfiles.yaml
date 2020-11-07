@@ -20,4 +20,5 @@
     - {role: gnome, tags: ["gnome"]}
     - {role: mangohud, tags: ["mangohud"]}
     - {role: fonts, tags: ["fonts"]}
+    - {role: environment, tags: ["environment"]}
     - {role: vscode, tags: ["never", "vscode"]}
