@@ -23,12 +23,13 @@
     - lstopo
     - mpv
     - org.bpython-interpreter.bpython
+    - org.gnome.Sysprof3
     - qdbusviewer
     - qv4l2
     - qvidcap
     - ranger
+    - vim
     - winetricks
     - xdvi
     - zenmap-root
     - zenmap
-    - vim
