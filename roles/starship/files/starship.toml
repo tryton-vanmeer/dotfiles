@@ -13,25 +13,3 @@ disabled = true
 
 [jobs]
 disabled = true
-
-[git_branch]
-symbol = " "
-
-[golang]
-symbol = " "
-
-[java]
-symbol = " "
-style = "bold red"
-
-[nodejs]
-symbol = " "
-style = "green"
-
-[python]
-symbol = " "
-style = "yellow"
-
-[rust]
-symbol = " "
-style = "red"
