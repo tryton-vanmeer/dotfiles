@@ -6,7 +6,6 @@ error_symbol = "[𝝺](bold red)"
 
 [directory]
 format = "[$path](bold purple) "
-#style = "bold purple"
 truncation_length = 6
 
 [cmd_duration]
