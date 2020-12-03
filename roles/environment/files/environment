@@ -1,1 +1,1 @@
-GNUPGHOME=$HOME/.local/share/gnupg
+GNUPGHOME=~/.local/share/gnupg
