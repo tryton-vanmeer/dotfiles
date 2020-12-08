@@ -31,6 +31,9 @@
     "files.trimTrailingWhitespace": true,
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+      "--ignore=F841"
+    ],
     "python.linting.pylintEnabled": false,
     "files.associations": {
       "Containerfile": "dockerfile",
