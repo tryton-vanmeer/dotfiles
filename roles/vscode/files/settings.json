@@ -48,4 +48,5 @@
       "dscanner.style.undocumented_declaration"
     ],
     "go.useLanguageServer": true,
+    "go.gopath": "/home/tryton-vanmeer/.local/share/go",
 }
