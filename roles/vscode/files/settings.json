@@ -29,7 +29,8 @@
     "rust-client.disableRustup": true,
     "workbench.startupEditor": "newUntitledFile",
     "files.trimTrailingWhitespace": true,
-    "python.linting.enabled": false,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
     "files.associations": {
       "Containerfile": "dockerfile",
       "*.xls": "excel"
