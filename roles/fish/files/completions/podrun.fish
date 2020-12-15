@@ -1,5 +1,5 @@
 # Images
-set -l images fedora ubuntu centos archlinux
+set -l images fedora ubuntu centos archlinux alpine
 
 # Tags
 set -l fedora 33 rawhide
