@@ -6,6 +6,6 @@ function podrun -d "Run container interactively and delete after"
             podman run -it --rm $argv[1]
         end
     else
-        echo "podrun DISTRO <VERSION>"
+        echo "podrun IMAGE <TAG>"
     end
 end
