@@ -21,6 +21,7 @@
     "editor.minimap.enabled": false,
     "terminal.external.linuxExec": "tilix",
     "terminal.integrated.shell.linux": "/usr/bin/fish",
+    "terminal.integrated.sendKeybindingsToShell": true,
     "editor.rulers": [80,120],
     "[xml]": {},
     "workbench.iconTheme": "material-icon-theme",
