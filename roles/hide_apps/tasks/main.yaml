@@ -21,7 +21,9 @@
     - julia
     - linguist
     - lstopo
+    - micro
     - mpv
+    - nm-connection-editor
     - org.bpython-interpreter.bpython
     - org.gnome.Sysprof3
     - qdbusviewer
