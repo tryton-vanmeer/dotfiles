@@ -1,10 +1,9 @@
 # Images
-set -l images fedora ubuntu centos archlinux alpine
+set -l images fedora ubuntu archlinux alpine
 
 # Tags
 set -l fedora 33 34 rawhide
 set -l ubuntu 20.04 20.10
-set -l centos 7 8
 set -l archlinux base base-devel
 
 # First argument: DISTRO
