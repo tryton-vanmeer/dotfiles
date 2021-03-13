@@ -11,6 +11,12 @@
     minus-color = "#ff5555"
     syntax-theme = Dracula
 
+[pull]
+ff = "only"
+
+[merge]
+ff = "only"
+
 [url "https://github.com/"]
  insteadOf = "gh:"
 
