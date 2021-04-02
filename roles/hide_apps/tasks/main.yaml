@@ -12,7 +12,7 @@
     - cmake-gui
     - designer
     - electron
-    - electron9
+    - electron11
     - firewall-config
     - fish
     - htop
