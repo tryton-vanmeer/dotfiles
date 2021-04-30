@@ -27,7 +27,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "mesonbuild.configureOnOpen": false,
     "shellcheck.run": "onSave",
-    "rust-client.disableRustup": true,
     "workbench.startupEditor": "newUntitledFile",
     "files.trimTrailingWhitespace": true,
     "python.linting.enabled": true,
@@ -48,7 +47,6 @@
     "codesnap.backgroundColor": "#282a36",
     "codesnap.showWindowControls": false,
     "codesnap.containerPadding": "1em",
-    "java.refactor.renameFromFileExplorer": "autoApply",
     "mesonbuild.buildFolder": "build",
     "d.servedPath": "/home/tryton-vanmeer/.local/share/code-d/bin/serve-d",
     "dscanner.ignoredKeys": [
@@ -56,5 +54,5 @@
     ],
     "go.useLanguageServer": true,
     "go.gopath": "/home/tryton-vanmeer/.local/share/go",
-    "codesnap.shutterAction": "copy",
+    "codesnap.shutterAction": "copy"
 }
