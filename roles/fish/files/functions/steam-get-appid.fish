@@ -3,6 +3,5 @@ function steam-get-appid -d "List possible appids with search term"
 
     grep -Ei "name.*$argv[1]" $steam_dirs \
     /opt/Steam/steamapps/appmanifest_*.acf \
-    ~/.steam/steam/steamapps/appmanifest_*.acf \
-    /mnt/HDD/Steam/steamapps/appmanifest_*.acf
+    ~/.steam/steam/steamapps/appmanifest_*.acf
 end
