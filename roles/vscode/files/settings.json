@@ -54,5 +54,7 @@
     ],
     "go.useLanguageServer": true,
     "go.gopath": "/home/tryton-vanmeer/.local/share/go",
-    "codesnap.shutterAction": "copy"
+    "codesnap.shutterAction": "copy",
+    "go.toolsManagement.autoUpdate": true,
+    "window.titleBarStyle": "native"
 }
