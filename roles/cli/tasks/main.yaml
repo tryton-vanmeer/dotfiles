@@ -65,7 +65,7 @@
 - name: "Git: Copy Config"
   copy:
     src: "{{ item }}"
-    dest: "~/.config/git/{{ item }}"
+    dest: "~/.config/{{ item }}"
   loop:
-    - "config"
-    - "ignore"
+    - "git/config"
+    - "git/ignore"
