@@ -5,6 +5,7 @@
     name:
       - "bat"
       - "exa"
+      - "fd-find"
       - "fish"
       - "pydf"
       - "ripgrep"
