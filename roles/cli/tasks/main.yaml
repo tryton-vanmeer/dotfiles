@@ -5,6 +5,7 @@
   dnf:
     name:
       - "bat"
+      - "fish"
     state: present
 
 - name: Create Config Directories
