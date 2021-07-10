@@ -15,12 +15,12 @@
     - "~/.config/bat/themes"
 
 - name: "Bat: Copy Config"
-  file:
+  copy:
     src: "bat/config"
     dest: "~/.config/bat/config"
 
 - name: "Bat: Copy Theme"
-  file:
+  copy:
     src: "bat/Dracula.tmTheme"
     dest: "~/.config/bat/themes/Dracula.tmTheme"
 
