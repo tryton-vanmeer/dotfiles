@@ -1,6 +1,0 @@
----
-- name: Link wgetrc file
-  file:
-    src: "{{ role_path }}/files/wgetrc"
-    dest: "~/.config/wgetrc"
-    state: link
