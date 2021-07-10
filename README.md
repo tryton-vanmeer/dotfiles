@@ -1,13 +1,11 @@
 # Dotfiles
 
-Dotfiles and system configuration managed by Ansible.
+Dotfiles and system configuration, for Fedora Workstation, managed by Ansible.
 
-Execute `bootstrap.sh` to run the playbook.
+```
+# Setup Ansible on fresh install
+make setup
 
-You can also specify the role to run instead of all of them.
-
-`./bootstrap.sh <role>`
-
-## Roles
-
-You can check under each subfolder in ./roles for more information.
+# Run the playbook
+make run
+```
