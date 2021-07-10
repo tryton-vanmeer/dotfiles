@@ -2,6 +2,6 @@
 - name: Hide Apps
   copy:
     src: "hidden.desktop"
-    dest: "{{ item }}.desktop"
+    dest: "~/.local/share/applications/{{ item }}.desktop"
   loop:
     - "fish"
