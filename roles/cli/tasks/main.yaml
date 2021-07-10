@@ -6,6 +6,8 @@
     name:
       - "bat"
       - "fish"
+      - "exa"
+      - "pydf"
     state: present
 
 - name: Create Config Directories
