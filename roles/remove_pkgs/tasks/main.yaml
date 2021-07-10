@@ -14,4 +14,5 @@
       - "libreoffice-*"
       - "rhythmbox"
       - "simple-scan"
+      - "totem"
     state: absent
