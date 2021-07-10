@@ -3,7 +3,8 @@
   become: true
   dnf:
     name: "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_version }}.noarch.rpm"
-    state: present
+    disable_gpg_check: true
+    state: "present"
 
 - name: Update Packages
   become: true
