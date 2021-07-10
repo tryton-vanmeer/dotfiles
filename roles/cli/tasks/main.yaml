@@ -4,9 +4,10 @@
   dnf:
     name:
       - "bat"
-      - "fish"
       - "exa"
+      - "fish"
       - "pydf"
+      - "ripgrep"
       - "starship"
     state: present
 
