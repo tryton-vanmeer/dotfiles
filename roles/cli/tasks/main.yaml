@@ -8,6 +8,7 @@
       - "fish"
       - "exa"
       - "pydf"
+      - "starship"
     state: present
 
 - name: Create Config Directories
