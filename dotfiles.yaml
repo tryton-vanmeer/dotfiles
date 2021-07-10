@@ -6,3 +6,4 @@
   roles:
     - "dnf"
     - "cli"
+    - "desktop_files"
