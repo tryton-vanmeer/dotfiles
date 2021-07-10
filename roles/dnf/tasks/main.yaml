@@ -1,13 +1,15 @@
 ---
 - name: Remove Unwanted Repos
   become: true
-  yum_repository:
-    name: "{{ item }}"
+  file:
+    path: "/etc/yum.repos.d/{{ item }}.repo"
     state: "absent"
   loop:
     - "fedora-cisco-openh264"
     - "fedora-modular"
-    - "updates-modular"
+    - "fedora-updates-modular"
+    - "fedora-updates-testing-modular"
+    - "fedora-updates-testing"
 
 - name: Remove Unwanted Packages
   become: true
