@@ -64,6 +64,16 @@
     name: "tryton-vanmeer"
     shell: "/usr/bin/fish"
 
+- name: "Delete Bash Dotfiles"
+  file:
+    path: "{{ item }}"
+    state: "absent"
+  loop:
+    - "~/.bash_history"
+    - "~/.bash_logout"
+    - "~/.bash_profile"
+    - "~/.bashrc"
+
 - name: "Git: Copy Config"
   copy:
     src: "{{ item }}"
