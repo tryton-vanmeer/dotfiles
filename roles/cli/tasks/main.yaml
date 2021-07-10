@@ -23,6 +23,7 @@
     - "~/.config/fish/conf.d"
     - "~/.config/fish/functions"
     - "~/.config/git"
+    - "~/.config/npm"
     - "~/.config/micro/colorschemes"
 
 - name: "Bat: Copy Config"
@@ -91,6 +92,11 @@
   copy:
     src: "micro/dracula.micro"
     dest: "~/.config/micro/colorschemes/dracula.micro"
+
+- name: "NPM: Copy Config"
+  copy:
+    src: "npmrc"
+    dest: "~/.config/npm/npmrc"
 
 - name: "Starship: Copy Config"
   copy:
