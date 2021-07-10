@@ -1,0 +1,7 @@
+---
+- name: Hide Apps
+  copy:
+    src: "hidden.desktop"
+    dest: "{{ item }}.desktop"
+  loop:
+    - "fish"
