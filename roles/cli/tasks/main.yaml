@@ -21,6 +21,7 @@
     - "~/.config/fish/completions"
     - "~/.config/fish/conf.d"
     - "~/.config/fish/functions"
+    - "~/.config/git"
 
 - name: "Bat: Copy Config"
   copy:
