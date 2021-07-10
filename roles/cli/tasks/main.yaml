@@ -34,3 +34,9 @@
 
 - name: "Bat: Build Cache"
   shell: "bat cache --build"
+
+- name: "Fish: Copy Completions"
+  copy:
+    src: "{{ item }}"
+    dest: "~/.config/fish/completions/{{ item | basename }}"
+  with_fileglob: "fish/completions/*"
