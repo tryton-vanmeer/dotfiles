@@ -1,4 +1,10 @@
 ---
+- name: Update Packages
+  become: true
+  dnf:
+    name: "*"
+    state: "latest"
+
 - name: Remove Unwanted Repos
   become: true
   file:
@@ -28,9 +34,3 @@
       - "simple-scan"
       - "totem"
     state: "absent"
-
-- name: Update Packages
-  become: true
-  dnf:
-    name: "*"
-    state: "latest"
