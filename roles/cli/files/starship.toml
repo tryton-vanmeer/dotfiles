@@ -1,0 +1,15 @@
+add_newline = false
+
+[character]
+success_symbol = "[𝝺](bold red)"
+error_symbol = "[𝝺](bold red)"
+
+[directory]
+format = "[$path](bold purple) "
+truncation_length = 6
+
+[cmd_duration]
+disabled = true
+
+[jobs]
+disabled = true

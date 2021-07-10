@@ -81,3 +81,8 @@
   copy:
     src: "micro/dracula.micro"
     dest: "~/.config/micro/colorschemes/dracula.micro"
+
+- name: "Starship: Copy Config"
+  copy:
+    src: "starship.toml"
+    dest: "~/.config/starship.toml"
