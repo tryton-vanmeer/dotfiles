@@ -16,6 +16,9 @@
     state: "directory"
   loop:
     - "~/.config/bat/themes"
+    - "~/.config/fish/completions"
+    - "~/.config/fish/conf.d"
+    - "~/.config/fish/functions"
 
 - name: "Bat: Copy Config"
   copy:
