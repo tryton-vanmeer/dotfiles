@@ -13,3 +13,16 @@
     state: "directory"
   loop:
     - "~/.config/bat/themes"
+
+- name: "Bat: Copy Config"
+  file:
+    src: "bat/config"
+    dest: "~/.config/bat/config"
+
+- name: "Bat: Copy Theme"
+  file:
+    src: "bat/Dracula.tmTheme"
+    dest: "~/.config/bat/themes/Dracula.tmTheme"
+
+- name: "Bat: Build Cache"
+  shell: "bat cache --build"
