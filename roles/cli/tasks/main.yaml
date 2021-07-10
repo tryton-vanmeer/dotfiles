@@ -86,3 +86,8 @@
   copy:
     src: "starship.toml"
     dest: "~/.config/starship.toml"
+
+- name: "Wget: Copy Config"
+  copy:
+    src: "wgetrc"
+    dest: "~/.config/wgetrc"
