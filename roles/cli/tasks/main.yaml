@@ -1,0 +1,8 @@
+---
+
+- name: Install CLI Tools
+  become: true
+  dnf:
+    name:
+      - "test"
+    state: present
