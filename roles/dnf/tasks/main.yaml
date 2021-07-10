@@ -1,4 +1,12 @@
 ---
+- name: Remove Unwanted Repos
+  become: true
+  yum_repository:
+    name: "{{ item }}"
+    state: "absent"
+  loop:
+    - "fedora-cisco-openh264"
+
 - name: Remove Unwanted Packages
   become: true
   dnf:
@@ -15,4 +23,4 @@
       - "rhythmbox"
       - "simple-scan"
       - "totem"
-    state: absent
+    state: "absent"
