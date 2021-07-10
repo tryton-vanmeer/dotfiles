@@ -71,3 +71,13 @@
   loop:
     - "git/config"
     - "git/ignore"
+
+- name: "Micro: Copy Config"
+  copy:
+    src: "micro/settings.json"
+    dest: "~/.config/micro/settings.json"
+
+- name: "Micro: Copy Theme"
+  copy:
+    src: "micro/dracula.micro"
+    dest: "~/.config/micro/colorschemes/dracula.micro"
