@@ -6,6 +6,8 @@
     state: "absent"
   loop:
     - "fedora-cisco-openh264"
+    - "fedora-modular"
+    - "updates-modular"
 
 - name: Remove Unwanted Packages
   become: true
