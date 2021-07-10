@@ -1,0 +1,16 @@
+---
+- name: Install Tilix
+  become: true
+  dnf:
+    name: "tilix"
+    state: "present"
+
+- name: Create Scheme Directory
+  file:
+    dest: "~/.config/tilix/schemes"
+    state: "directory"
+
+- name: Copy Scheme
+  copy:
+    src: "Dracula.json"
+    dest: "~/.config/tilix/schemes/Dracula.json"
