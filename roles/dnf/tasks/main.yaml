@@ -28,3 +28,9 @@
       - "simple-scan"
       - "totem"
     state: "absent"
+
+- name: Update Packages
+  become: true
+  dnf:
+    name: "*"
+    state: "latest"
