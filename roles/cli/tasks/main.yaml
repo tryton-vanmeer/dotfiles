@@ -15,16 +15,16 @@
 
 - name: Create Config Directories
   file:
-    dest: "{{ item }}"
+    dest: "~/.config/{{ item }}"
     state: "directory"
   loop:
-    - "~/.config/bat/themes"
-    - "~/.config/fish/completions"
-    - "~/.config/fish/conf.d"
-    - "~/.config/fish/functions"
-    - "~/.config/git"
-    - "~/.config/npm"
-    - "~/.config/micro/colorschemes"
+    - "bat/themes"
+    - "fish/completions"
+    - "fish/conf.d"
+    - "fish/functions"
+    - "git"
+    - "npm"
+    - "micro/colorschemes"
 
 - name: "Bat: Copy Config"
   copy:
