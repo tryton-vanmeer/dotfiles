@@ -1,5 +1,4 @@
 ---
-
 - name: Install CLI Tools
   become: true
   dnf:
