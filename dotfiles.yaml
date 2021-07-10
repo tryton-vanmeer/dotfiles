@@ -1,8 +1,5 @@
 ---
 - hosts: localhost
   connection: local
-  remote_user: "{{ localuser }}"
-  vars:
-    user: "{{ localuser }}"
   roles:
     - remove_pkgs
