@@ -53,3 +53,9 @@
     src: "{{ item }}"
     dest: "~/.config/fish/functions/{{ item | basename }}"
   with_fileglob: "fish/functions/*"
+
+- name: "Fish: Set Users Shell"
+  become: true
+  user:
+    name: "tryton-vanmeer"
+    shell: "/usr/bin/fish"
