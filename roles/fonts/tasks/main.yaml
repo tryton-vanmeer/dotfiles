@@ -1,0 +1,9 @@
+---
+- name: Install Fonts
+  become: true
+  dnf:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - "jetbrains-mono-fonts-all"
+    - "fontawesome-fonts"
