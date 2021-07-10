@@ -44,7 +44,7 @@
     dest: "~/.config/fish/completions/{{ item | basename }}"
   with_fileglob: "fish/completions/*"
 
-- name: "Fish: Copy Configuration"
+- name: "Fish: Copy Config"
   copy:
     src: "{{ item }}"
     dest: "~/.config/fish/conf.d/{{ item | basename }}"
@@ -61,3 +61,11 @@
   user:
     name: "tryton-vanmeer"
     shell: "/usr/bin/fish"
+
+- name: "Git: Copy Config"
+  copy:
+    src: "{{ item }}"
+    dest: "~/.config/git/{{ item }}"
+  loop:
+    - "config"
+    - "ignore"
