@@ -2,8 +2,11 @@
 - name: Install Tilix
   become: true
   dnf:
-    name: "tilix"
+    name: "{{ item }}"
     state: "present"
+  loop:
+    - "tilix"
+    - "tilix-nautilus"
 
 - name: Create Scheme Directory
   file:
