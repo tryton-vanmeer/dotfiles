@@ -1,5 +1,6 @@
 ---
 - name: Remove Unwanted Packages
+  become: true
   dnf:
     name:
       - "libreoffice-*"
