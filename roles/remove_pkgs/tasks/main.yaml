@@ -3,5 +3,15 @@
   become: true
   dnf:
     name:
+      - "abrt"
+      - "cheese"
+      - "gnome-boxes"
+      - "gnome-logs"
+      - "gnome-maps"
+      - "gnome-photos"
+      - "gnome-software"
+      - "gnome-tour"
       - "libreoffice-*"
+      - "rhythmbox"
+      - "simple-scan"
     state: absent
