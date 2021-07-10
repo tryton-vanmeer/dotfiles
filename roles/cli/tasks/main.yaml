@@ -6,3 +6,10 @@
     name:
       - "bat"
     state: present
+
+- name: Create Config Directories
+  file:
+    dest: "{{ item }}"
+    state: "directory"
+  loop:
+    - "~/.config/bat/themes"
