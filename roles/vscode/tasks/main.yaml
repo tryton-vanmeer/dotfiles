@@ -11,7 +11,7 @@
     name: "gitlab.com_paulcarroty_vscodium_repo"
     description: "VSCodium Repo"
     file: "vscodium"
-    baseurl: "https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/rpms/"
+    baseurl: "https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/rpms/"
     enabled: true
     gpgcheck: true
 
