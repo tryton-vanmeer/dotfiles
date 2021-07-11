@@ -23,6 +23,6 @@
     key: "{{ item.key }}"
     value: "{{ item.value }}"
   loop:
-    app-title:
+    - app-title:
       key: "/com/gexperts/Tilix/app-title"
       value: "''"
