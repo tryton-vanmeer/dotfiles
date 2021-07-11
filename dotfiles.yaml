@@ -9,4 +9,5 @@
     # - "desktop_files"
     # - "fonts"
     # - "tilix"
-    - "gnome"
+    # - "gnome"
+    - "vscode"
