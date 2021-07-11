@@ -17,3 +17,11 @@
   copy:
     src: "Dracula.json"
     dest: "~/.config/tilix/schemes/Dracula.json"
+
+- name: Configure Dconf
+  dconf:
+    key: "{{ item.value.key }}"
+    value: "{{ item.value.value }}"
+    with_dict:
+      app-title:
+        "/com/gexperts/Tilix/app-title": "''"
