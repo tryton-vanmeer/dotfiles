@@ -20,18 +20,14 @@
 
 - name: Configure Dconf
   dconf:
-    key: "{{ item.key }}"
+    key: "{{ item }}"
     value: "{{ item.value }}"
   loop:
-    - app-title:
-      key: "/com/gexperts/Tilix/app-title"
+    - "/com/gexperts/Tilix/app-title":
       value: "''"
-    - session-name:
-      key: "/com/gexperts/Tilix/session-name"
+    - "/com/gexperts/Tilix/session-name":
       value: "''"
-    - show-title:
-      key: "/com/gexperts/Tilix/terminal-title-show-when-single"
+    - "/com/gexperts/Tilix/terminal-title-show-when-single":
       value: "false"
-    - use-tabs:
-      key: "/com/gexperts/Tilix/use-tabs"
+    - "/com/gexperts/Tilix/use-tabs":
       value: "false"
