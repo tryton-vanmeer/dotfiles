@@ -4,8 +4,8 @@
   vars:
     ansible_python_interpreter: "/usr/bin/python3"
   roles:
-    - "dnf"
-    - "cli"
-    - "desktop_files"
-    - "fonts"
+    # - "dnf"
+    # - "cli"
+    # - "desktop_files"
+    # - "fonts"
     - "tilix"
