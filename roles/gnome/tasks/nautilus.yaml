@@ -4,5 +4,14 @@
     key: "{{ item.key }}"
     value: "{{ item.value | string }}"
   loop:
-    - key: ""
-    - value: ""
+    - key: "/org/gnome/nautilus/icon-view/default-zoom-level"
+      value: "'larger'"
+
+    - key: "/org/gnome/nautilus/preferences/recursive-search"
+      value: "'never'"
+
+    - key: "/org/gnome/nautilus/preferences/search-view"
+      value: "'icon-view'"
+
+    - key: "/org/gnome/nautilus/preferences/show-image-thumbnails"
+      value: "'never'"
