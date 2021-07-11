@@ -22,7 +22,7 @@
   dconf:
     key: "{{ item.key }}"
     value: "{{ item.value }}"
-    loop:
-      app-title:
-        key: "/com/gexperts/Tilix/app-title"
-        value: "''"
+  loop:
+    app-title:
+      key: "/com/gexperts/Tilix/app-title"
+      value: "''"
