@@ -1,4 +1,20 @@
 ---
+- name: Create GTKSourceView Directories
+  file:
+    dest: "~/.local/share/gtksourceview-{{ item }}/styles"
+    state: "directory"
+  loop:
+   - "4"
+   - "3.0"
+
+- name: Copy GTK GTKSourceView Themes
+  copy:
+    src: "dracula.xml"
+    dest: "~/.local/share/gtksourceview-{{ item }}/styles/dracula.xml"
+  loop:
+    - "4"
+    - "3.0"
+
 - name: Configure Gedit
   dconf:
     key: "{{ item.key }}"
