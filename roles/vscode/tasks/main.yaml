@@ -1,4 +1,17 @@
 ---
+- name: Create Config Directory
+  file:
+    path: "~/.config/VSCodium/User"
+    state: directory
+
+- name: Copy Configs
+  copy:
+    src: "{{ item }}"
+    dest: "~/.config/VSCodium/User/{{ item }}"
+  loop:
+    - "keybindings.json"
+    - "settings.json"
+
 - name: Add VSCodium GPG Key
   become: true
   rpm_key:
