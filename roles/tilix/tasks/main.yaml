@@ -20,10 +20,9 @@
 
 - name: Configure Dconf
   dconf:
-    key: "{{ item.value.key }}"
-    value: "{{ item.value.value }}"
-    with_dict:
-      gsettings:
-        app-title:
-          key: "/com/gexperts/Tilix/app-title"
-          value: "''"
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+    loop:
+      app-title:
+        key: "/com/gexperts/Tilix/app-title"
+        value: "''"
