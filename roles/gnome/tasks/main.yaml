@@ -78,3 +78,15 @@
 
     - key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-type"
       value: "'nothing'"
+
+    - key: "/org/gnome/shell/favorite-apps"
+      value: "['firefox.desktop', 'steam.desktop', 'code-oss.desktop', 'com.gexperts.Tilix.desktop', 'org.gnome.Nautilus.desktop']" # yamllint disable-line
+
+    - key: "/org/gnome/shell/overrides/workspaces-only-on-primary"
+      value: "false"
+
+    - key: "/org/gnome/shell/weather/locations"
+      value: "[<(uint32 2, <('Ottawa', 'CYOW', true, [(0.79092504517986117, -1.3206324731601402)], [(0.7926703744318554, -1.3212142437597076)])>)>]" # yamllint disable-line
+
+    - key: "/org/gnome/shell/window-switcher/app-icon-mode"
+      value: "'app-icon-only'"
