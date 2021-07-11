@@ -26,3 +26,6 @@
     - app-title:
       key: "/com/gexperts/Tilix/app-title"
       value: "''"
+    - session-name:
+      key: "/com/gexperts/Tilix/session-name"
+      value: "''"
