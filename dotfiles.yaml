@@ -8,4 +8,5 @@
     # - "cli"
     # - "desktop_files"
     # - "fonts"
-    - "tilix"
+    # - "tilix"
+    - "gnome"
