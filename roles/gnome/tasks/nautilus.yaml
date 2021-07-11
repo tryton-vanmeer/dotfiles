@@ -1,0 +1,8 @@
+---
+- name: Configure Nautilus
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value | string }}"
+  loop:
+    - key: ""
+    - value: ""
