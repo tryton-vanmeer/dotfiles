@@ -8,6 +8,15 @@
     - "tilix"
     - "tilix-nautilus"
 
+- name: Uninstall GNOME Terminal
+  become: true
+  dnf:
+    name: "{{ item }}"
+    state: "absent"
+  loop:
+    - "gnome-terminal"
+    - "gnome-terminal-nautilus"
+
 - name: Create Scheme Directory
   file:
     dest: "~/.config/tilix/schemes"
