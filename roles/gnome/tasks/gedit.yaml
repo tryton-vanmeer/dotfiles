@@ -4,4 +4,17 @@
     key: "{{ item.key }}"
     value: "{{ item.value | string }}"
   loop:
-  -
+  - key: "/org/gnome/gedit/preferences/editor/display-right-margin"
+    value: "true"
+
+  - key: "/org/gnome/gedit/preferences/editor/highlight-current-line"
+    value: "false"
+
+  - key: "/org/gnome/gedit/preferences/editor/insert-spaces"
+    value: "true"
+
+  - key: "/org/gnome/gedit/preferences/editor/scheme"
+    value: "'dracula'"
+
+  - key: "/org/gnome/gedit/preferences/editor/tabs-size"
+    value: "4"
