@@ -1,6 +1,0 @@
----
-
-- include_tasks: desktop.yml
-- include_tasks: nautilus.yml
-- include_tasks: settings-daemon.yml
-- include_tasks: shell.yml
