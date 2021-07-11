@@ -21,7 +21,7 @@
 - name: Configure Dconf
   dconf:
     key: "{{ item.key }}"
-    value: "{{ item.value }}"
+    value: "{{ item.value | string}}"
   loop:
     - key: "/com/gexperts/Tilix/app-title"
       value: "''"
@@ -32,7 +32,7 @@
     - key: "/com/gexperts/Tilix/use-tabs"
       value: "false"
     - key: "/com/gexperts/Tilix/profiles/list"
-      value: "{{ ['2b7c4080-0ddd-46c5-8f23-563fd3ba789d'] | string }}"
+      value: "['2b7c4080-0ddd-46c5-8f23-563fd3ba789d']"
     - key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/background-color"
       value: "'#282936'"
     - key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/foreground-color"
