@@ -23,6 +23,7 @@
     key: "{{ item.value.key }}"
     value: "{{ item.value.value }}"
     with_dict:
-      app-title:
-        key: "/com/gexperts/Tilix/app-title"
-        value: "''"
+      gsettings:
+        app-title:
+          key: "/com/gexperts/Tilix/app-title"
+          value: "''"
