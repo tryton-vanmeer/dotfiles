@@ -1,0 +1,7 @@
+---
+- name: Configure Gedit
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value | string }}"
+  loop:
+  -
