@@ -1,8 +1,0 @@
----
-- name: Link /etc/environment
-  become: true
-  file:
-    src: "{{ role_path }}/files/environment"
-    dest: "/etc/environment"
-    state: link
-    force: true
