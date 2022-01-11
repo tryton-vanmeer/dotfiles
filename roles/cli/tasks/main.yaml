@@ -62,7 +62,7 @@
 - name: "Fish: Set Users Shell"
   become: true
   user:
-    name: "tryton-vanmeer"
+    name: "tryton"
     shell: "/usr/bin/fish"
 
 - name: "Delete Bash Dotfiles"
