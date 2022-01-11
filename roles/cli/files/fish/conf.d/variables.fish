@@ -1,5 +1,5 @@
-set -U fish_user_paths ~/.local/bin ~/.local/share/go/bin $fish_user_paths
 set -U fish_emoji_width 2
+set -U fish_features qmark-noglob
 
 # Default Programs
 set -x BROWSER /usr/bin/firefox
