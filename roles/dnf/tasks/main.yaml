@@ -36,7 +36,6 @@
       - "gnome-maps"
       - "gnome-photos"
       - "gnome-software"
-      - "gnome-tour"
       - "libreoffice-*"
       - "rhythmbox"
       - "simple-scan"
