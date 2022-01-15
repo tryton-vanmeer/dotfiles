@@ -7,8 +7,8 @@ excludesfile = ~/.config/git/ignore
 pager = delta
 
 [delta]
-plus-color = "#50fa7b"
-minus-color = "#ff5555"
+plus-style = "syntax #50fa7b"
+minus-style = "normal #ff5555"
 syntax-theme = Dracula
 
 [init]
