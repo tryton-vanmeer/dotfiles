@@ -3,9 +3,10 @@
 Dotfiles and system configuration, for Fedora Workstation, managed by Ansible.
 
 ```
-# Setup Ansible on fresh install
-make setup
+# Setup after a fresh install
+sudo dnf install just
+just setup
 
 # Run the playbook
-make run
+just run
 ```
