@@ -5,3 +5,5 @@
     dest: "~/.local/share/applications/{{ item }}.desktop"
   loop:
     - "fish"
+    - "htop"
+    - "org.gnome.Tour"
