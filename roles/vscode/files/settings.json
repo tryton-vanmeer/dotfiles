@@ -34,8 +34,6 @@
   ],
   "python.linting.pylintEnabled": false,
   "files.associations": {
-    "Containerfile": "dockerfile",
-    "*.xls": "excel",
     "Justfile": "makefile"
   },
   "telemetry.telemetryLevel": "off",
