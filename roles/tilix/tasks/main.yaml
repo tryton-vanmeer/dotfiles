@@ -25,7 +25,7 @@
 - name: Copy Scheme
   copy:
     src: "Dracula.json"
-    dest: "~/.config/tilix/schemes/Dracula.json"
+    dest: "~/.config/tilix/schemes/Monokai-Plus.json"
 
 - name: Configure Dconf
   dconf:
@@ -48,7 +48,7 @@
       value: "['2b7c4080-0ddd-46c5-8f23-563fd3ba789d']"
 
     - key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/background-color"
-      value: "'#282936'"
+      value: "'#1C1C1C'"
 
     - key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/foreground-color"
       value: "'#F8F8F2'"
@@ -57,7 +57,7 @@
       value: "4"
 
     - key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/palette"
-      value: ["#282829293636", "#FF5454", "#50FA7B", "#F1FA8C", "#BD93F9", "#FF79C6", "#8BE8FD", "#BFBFBF", "#4D4D4D", "#FF6E67", "#5AF78D", "#F4F99D", "#CAA8FA", "#FF92D0", "#9AEDFE", "#E6E6E6"] # yamllint disable-line
+      value: ["#272822", "#F92672", "#A6E22E", "#F4BF75", "#66D9EF", "#AE81FF", "#A1EFE4", "#F8F8F2", "#75715E", "#F92672", "#A6E22E", "#F4BF75", "#66D9EF", "#AE81FF", "#A1EFE4", "#F9F8F5"] # yamllint disable-line
 
     - key: "/com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d/font"
       value: "'JetBrains Mono 12'"
