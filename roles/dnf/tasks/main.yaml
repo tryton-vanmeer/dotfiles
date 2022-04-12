@@ -12,22 +12,11 @@
     name: "*"
     state: "latest"
 
-- name: Remove Unwanted Repos
-  become: true
-  file:
-    path: "/etc/yum.repos.d/{{ item }}.repo"
-    state: "absent"
-  loop:
-    - "fedora-cisco-openh264"
-    - "fedora-modular"
-    - "fedora-updates-modular"
-    - "fedora-updates-testing-modular"
-    - "fedora-updates-testing"
-
-- name: Remove Unwanted Packages
+- name: Remove Unwanted Packages and Repos
   become: true
   dnf:
     name:
+      - "fedora-repos-modular"
       - "abrt-*"
       - "cheese"
       - "gnome-boxes"
