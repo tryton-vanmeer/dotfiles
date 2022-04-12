@@ -32,15 +32,6 @@
     dest: "~/.config/bat/config"
     mode: "0644"
 
-- name: "Bat: Copy Theme"
-  copy:
-    src: "bat/Dracula.tmTheme"
-    dest: "~/.config/bat/themes/Dracula.tmTheme"
-    mode: "0644"
-
-- name: "Bat: Build Cache"
-  shell: "bat cache --build"
-
 - name: "Fish: Copy Completions"
   copy:
     src: "{{ item }}"
