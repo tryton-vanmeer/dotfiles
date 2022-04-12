@@ -17,7 +17,6 @@ set -x XDG_CACHE_HOME "$HOME/.cache"
 # Dotfiles
 set -x ICEAUTHORITY "$XDG_CACHE_HOME/ICEauthority"
 set -x XAUTHORITY "$XDG_RUNTIME_DIR/Xauthority"
-set -x WINEPREFIX "$XDG_DATA_HOME/wineprefixes/default"
 set -x WGETRC "$XDG_CONFIG_HOME/wgetrc"
 set -x LESSHISTFILE "-"
 set -x ANDROID_SDK_HOME "$XDG_CONFIG_HOME/android"
@@ -35,3 +34,5 @@ set -x JULIA_DEPOT_PATH "$XDG_DATA_HOME/julia"
 set -x GRADLE_USER_HOME "$XDG_DATA_HOME/gradle"
 set -x TS3_CONFIG_DIR "$XDG_CONFIG_HOME/ts3client"
 set -x GOPATH "$XDG_DATA_HOME/go"
+set -x TEXMFHOME "$XDG_CONFIG_HOME/texmf"
+
