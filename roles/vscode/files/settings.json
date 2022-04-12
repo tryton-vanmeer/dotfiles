@@ -4,9 +4,9 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "workbench.statusBar.visible": true,
   "window.menuBarVisibility": "toggle",
-  "workbench.colorTheme": "Dracula",
   "explorer.openEditors.visible": 0,
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "JetBrains Mono, monospace",
+  "terminal.integrated.fontFamily": "JetBrains Mono, monospace",
   "editor.suggestSelection": "first",
   "editor.fontLigatures": true,
   "editor.selectionClipboard": false,
@@ -54,5 +54,7 @@
   "security.workspace.trust.untrustedFiles": "open",
   "editor.codeLens": false,
   "explorer.confirmDelete": false,
-  "terminal.integrated.defaultProfile.linux": "fish"
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "workbench.colorTheme": "Monokai++",
+  "editor.colorDecorators": false
 }
