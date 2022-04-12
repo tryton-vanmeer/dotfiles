@@ -7,9 +7,12 @@ excludesfile = ~/.config/git/ignore
 pager = delta
 
 [delta]
-plus-style = "syntax #50fa7b"
-minus-style = "normal #ff5555"
-syntax-theme = Dracula
+dark = true
+hyperlinks = true
+keep-plus-minus-markers = true
+plus-style = "syntax #004433"
+minus-style = "syntax bold #5d001e"
+syntax-theme = Monokai Extended Bright
 
 [init]
 defaultBranch = "master"
