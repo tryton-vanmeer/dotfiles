@@ -1,8 +1,8 @@
 add_newline = false
 
 [character]
-success_symbol = "[𝝺](bold red)"
-error_symbol = "[𝝺](bold red)"
+success_symbol = "[ϝ](bold red)"
+error_symbol = "[ϝ](bold red)"
 
 [directory]
 format = "[$path](bold purple) "
