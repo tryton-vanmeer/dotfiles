@@ -60,5 +60,10 @@
   "explorer.confirmDelete": false,
   "terminal.integrated.defaultProfile.linux": "fish",
   "editor.colorDecorators": false,
-  "workbench.colorTheme": "Dracula"
+  "workbench.colorTheme": "Dracula",
+  "workbench.colorCustomizations": {
+    "editor.background": "#22212c",
+    "panel.background": "#22212c",
+    "terminal.background": "#22212c"
+  }
 }
