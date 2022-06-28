@@ -5,8 +5,8 @@
   "workbench.statusBar.visible": true,
   "window.menuBarVisibility": "toggle",
   "explorer.openEditors.visible": 0,
-  "editor.fontFamily": "JetBrains Mono, monospace",
-  "terminal.integrated.fontFamily": "JetBrains Mono, monospace",
+  "editor.fontFamily": "JetBrains Mono, Symbols Nerd Font Mono, DejaVu Sans Mono, monospace",
+  "terminal.integrated.fontFamily": "JetBrains Mono, Symbols Nerd Font Mono, DejaVu Sans Mono, monospace",
   "editor.suggestSelection": "first",
   "editor.fontLigatures": true,
   "editor.selectionClipboard": false,
@@ -19,7 +19,10 @@
   "editor.minimap.enabled": false,
   "terminal.external.linuxExec": "tilix",
   "terminal.integrated.sendKeybindingsToShell": true,
-  "editor.rulers": [80,120],
+  "editor.rulers": [
+    80,
+    120
+  ],
   "[xml]": {},
   "workbench.iconTheme": "material-icon-theme",
   "mesonbuild.configureOnOpen": false,
@@ -32,6 +35,7 @@
     "--max-line-length=120",
     "--ignore=F841"
   ],
+  "python.formatting.provider": "black",
   "python.linting.pylintEnabled": false,
   "files.associations": {
     "Justfile": "makefile"
@@ -55,6 +59,6 @@
   "editor.codeLens": false,
   "explorer.confirmDelete": false,
   "terminal.integrated.defaultProfile.linux": "fish",
-  "workbench.colorTheme": "Monokai++",
-  "editor.colorDecorators": false
+  "editor.colorDecorators": false,
+  "workbench.colorTheme": "Dracula"
 }
