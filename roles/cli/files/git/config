@@ -1,3 +1,6 @@
+[include]
+path = ~/.config/git/colors
+
 [user]
 email = hello@trytonvanmeer.dev
 name = Tryton Van Meer

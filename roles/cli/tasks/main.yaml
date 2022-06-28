@@ -81,8 +81,8 @@
 
 - name: "Micro: Copy Theme"
   copy:
-    src: "micro/monokai-plus.micro"
-    dest: "~/.config/micro/colorschemes/monokai-plus.micro"
+    src: "micro/dracula.micro"
+    dest: "~/.config/micro/colorschemes/dracula.micro"
 
 - name: "NPM: Copy Config"
   copy:
