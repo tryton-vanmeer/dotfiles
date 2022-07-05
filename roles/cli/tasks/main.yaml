@@ -8,7 +8,7 @@
       - "fd-find"
       - "fish"
       - "micro"
-      - "pydf"
+      - "duf"
       - "ripgrep"
       - "starship"
     state: present
